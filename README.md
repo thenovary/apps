@@ -1,55 +1,253 @@
 # privacy-policy
 
-This Privacy Policy applies to the “모여봐요 도감” mobile application (the "Application") developed by thenovary (the "Developer").
+This Privacy Policy applies to the mobile application “NookDex” (also known as “모여봐요 도감” and “あつ森手帳”) developed by thenovary (the "Developer").
 
 Overview
-The Application is an Animal Crossing collection guide app. The Application does not require user registration and does not operate its own servers. All user-created data (such as collection progress and settings) is stored locally on the user's device.
+
+The Application is an Animal Crossing collection guide app. The Application does not require user registration and does not operate its own servers. All user-created data (such as collection progress, island information, images, and settings) is stored locally on the user's device.
 
 Information Collection and Use
+
 The Developer does not directly collect, store, transmit, or process personal information from users.
 
 However, the Application uses third-party services for advertising and in-app purchase functionality. These third-party services may automatically collect certain information in accordance with their own privacy policies.
 
 This information may include:
-- Device information
-- Advertising ID
-- App interaction data
-- Purchase information (for in-app purchases)
-- IP address
+
+Device information
+
+Advertising ID
+
+App interaction data
+
+Purchase information (for in-app purchases)
+
+IP address
 
 The Developer does not access or control the data collected by these third-party services.
 
+Camera and Photo Library Access
+
+The Application may request access to the device camera and photo library solely for the purpose of allowing users to attach images to island information entries within the app.
+
+Images captured or selected by the user are stored locally on the device. The Developer does not collect, upload, transmit, store externally, or access these images.
+
+Access to the camera and media files is used only with the user's explicit action and permission.
+
 Third-Party Services
+
 The Application integrates the following third-party services:
-- Google Play Services
-- Google AdMob (advertising)
-- Google Play Billing (in-app purchases)
+
+Google Play Services
+
+Google AdMob (advertising)
+
+Google Play Billing (in-app purchases)
 
 These services may collect and process data as independent data controllers under their respective privacy policies.
 
 Data Storage
-All collection progress, preferences, and user-created data within the Application are stored locally on the user's device. The Developer does not have access to this data.
+
+All collection progress, island information, preferences, and user-created data within the Application are stored locally on the user's device. The Developer does not have access to this data.
 
 Data Sharing
+
 The Developer does not sell personal data.
 
 User data may be processed by third-party service providers strictly for advertising and payment processing purposes as described above.
 
 Children’s Privacy
+
 The Application is not specifically directed to children under the age of 13. The Developer does not knowingly collect personal information from children.
 
 Data Retention
+
 Because the Developer does not collect or store personal data, there is no remote data retention by the Developer. Users may delete all locally stored data by uninstalling the Application.
 
 Security
+
 The Developer does not operate servers or maintain remote databases for this Application.
 
 Changes
+
 This Privacy Policy may be updated if necessary. Any updates will be reflected on this page with a revised effective date.
 
 Effective Date: 2026-02-20
 
 Contact
+
 If you have any questions regarding this Privacy Policy, please contact:
 
 Email: infodeskline@gmail.com
+
+***
+
+# 개인정보 처리방침 (Korean)
+
+본 개인정보 처리방침은 thenovary(이하 “개발자”)가 제공하는 모바일 애플리케이션 “모여봐요 도감” (영문명: NookDex, 일본어명: あつ森手帳, 이하 “애플리케이션”)에 적용됩니다.
+
+개요
+
+본 애플리케이션은 동물의 숲 컬렉션 가이드 앱입니다.
+애플리케이션은 회원가입을 요구하지 않으며, 자체 서버를 운영하지 않습니다.
+수집 진행 정보, 섬 정보, 이미지, 설정 등 사용자가 생성한 모든 데이터는 이용자의 기기에 로컬로 저장됩니다.
+
+개인정보의 수집 및 이용
+
+개발자는 이용자의 개인정보를 직접 수집, 저장, 전송 또는 처리하지 않습니다.
+
+다만, 애플리케이션은 광고 및 인앱 결제 기능 제공을 위해 제3자 서비스를 사용합니다.
+이 과정에서 해당 제3자 서비스는 자체 개인정보처리방침에 따라 일부 정보를 자동으로 수집할 수 있습니다.
+
+수집될 수 있는 정보는 다음과 같습니다:
+
+기기 정보
+
+광고 식별자(Advertising ID)
+
+앱 사용 및 상호작용 정보
+
+결제 정보(인앱 결제 시)
+
+IP 주소
+
+개발자는 제3자 서비스가 수집하는 데이터에 접근하거나 이를 통제하지 않습니다.
+
+카메라 및 사진 접근
+
+애플리케이션은 사용자가 섬 정보 입력란에 사진을 첨부할 수 있도록 하기 위해 기기의 카메라 및 사진 보관함 접근 권한을 요청할 수 있습니다.
+
+사용자가 촬영하거나 선택한 이미지는 기기에 로컬로 저장되며, 개발자는 해당 이미지를 수집, 업로드, 전송, 외부 저장 또는 접근하지 않습니다.
+
+카메라 및 미디어 파일 접근은 이용자의 명시적인 동작과 권한 허용이 있을 경우에만 사용됩니다.
+
+제3자 서비스
+
+애플리케이션은 다음과 같은 제3자 서비스를 사용합니다:
+
+Google Play Services
+
+Google AdMob (광고)
+
+Google Play Billing (인앱 결제)
+
+이들 서비스는 각자의 개인정보처리방침에 따라 독립적으로 데이터를 처리할 수 있습니다.
+
+데이터 저장
+
+수집 진행 정보, 섬 정보, 설정 등 애플리케이션 내 사용자 데이터는 모두 이용자의 기기에 로컬로 저장됩니다.
+개발자는 해당 데이터에 접근할 수 없습니다.
+
+데이터 공유
+
+개발자는 개인정보를 판매하지 않습니다.
+
+다만, 광고 및 결제 처리 목적에 한하여 위에서 명시한 제3자 서비스 제공자가 데이터를 처리할 수 있습니다.
+
+아동의 개인정보 보호
+
+본 애플리케이션은 만 13세 미만 아동을 주요 대상으로 하지 않습니다.
+개발자는 아동의 개인정보를 고의로 수집하지 않습니다.
+
+데이터 보관
+
+개발자가 개인정보를 수집하거나 서버에 저장하지 않으므로 별도의 원격 데이터 보관은 이루어지지 않습니다.
+이용자는 애플리케이션을 삭제함으로써 기기에 저장된 모든 데이터를 제거할 수 있습니다.
+
+보안
+
+개발자는 본 애플리케이션과 관련하여 서버 또는 원격 데이터베이스를 운영하지 않습니다.
+
+변경 사항
+
+본 개인정보 처리방침은 필요 시 수정될 수 있으며, 변경 사항은 본 페이지에 반영됩니다.
+
+시행일: 2026-02-20
+
+문의: infodeskline@gmail.com
+
+***
+
+# プライバシーポリシー (Japanese)
+
+本プライバシーポリシーは、thenovary（以下「開発者」）が提供するモバイルアプリケーション 「あつ森手帳」（英語名：NookDex、韓国語名：모여봐요 도감、以下「本アプリ」）に適用されます。
+
+概要
+
+本アプリは「あつまれ どうぶつの森」のコレクションガイドアプリです。
+本アプリはユーザー登録を必要とせず、独自のサーバーを運営しておりません。
+収集進捗、島情報、画像、設定など、ユーザーが作成したデータはすべてユーザーの端末内にローカル保存されます。
+
+情報の収集および利用
+
+開発者は、ユーザーの個人情報を直接収集、保存、送信、または処理することはありません。
+
+ただし、本アプリは広告配信およびアプリ内課金機能の提供のために第三者サービスを利用しています。
+これらの第三者サービスは、それぞれのプライバシーポリシーに基づき、一定の情報を自動的に収集する場合があります。
+
+収集される可能性のある情報には、以下が含まれます：
+
+端末情報
+
+広告識別子（Advertising ID）
+
+アプリの利用状況データ
+
+購入情報（アプリ内課金時）
+
+IPアドレス
+
+開発者は、これら第三者サービスが収集するデータにアクセスまたは管理することはありません。
+
+カメラおよび写真へのアクセス
+
+本アプリは、島情報入力欄に画像を添付できるようにする目的で、端末のカメラおよび写真ライブラリへのアクセスを要求する場合があります。
+
+ユーザーが撮影または選択した画像は端末内にローカル保存されます。開発者がこれらの画像を収集、アップロード、送信、外部保存、または閲覧することはありません。
+
+カメラおよびメディアファイルへのアクセスは、ユーザーの明示的な操作および許可があった場合にのみ使用されます。
+
+第三者サービス
+
+本アプリは以下の第三者サービスを利用しています：
+
+Google Play Services
+
+Google AdMob（広告）
+
+Google Play Billing（アプリ内課金）
+
+これらのサービスは、それぞれ独立したデータ管理者として各自のプライバシーポリシーに従ってデータを処理する場合があります。
+
+データの保存
+
+収集進捗、島情報、設定などのユーザーデータはすべてユーザーの端末内にローカル保存されます。
+開発者はこれらのデータにアクセスすることはできません。
+
+データ共有
+
+開発者は個人データを販売することはありません。
+
+ただし、広告配信および決済処理の目的に限り、上記第三者サービスがデータを処理する場合があります。
+
+子どものプライバシー
+
+本アプリは13歳未満の子どもを対象として設計されたものではありません。
+開発者は、子どもの個人情報を故意に収集することはありません。
+
+データ保持
+
+開発者は個人データを収集またはサーバー上に保存していないため、リモートでのデータ保持は行いません。
+ユーザーは本アプリをアンインストールすることで、端末内のデータを削除できます。
+
+セキュリティ
+
+開発者は本アプリに関連してサーバーまたはリモートデータベースを運営しておりません。
+
+変更
+
+本プライバシーポリシーは必要に応じて更新される場合があります。変更は本ページに反映されます。
+
+施行日： 2026-02-20
+
+お問い合わせ：infodeskline@gmail.com
