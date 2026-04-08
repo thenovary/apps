@@ -1,0 +1,152 @@
+---
+/**
+ * AppCard — App showcase card for the home page grid
+ * Glassmorphism + squircle corners + scale-on-press
+ */
+import type { Lang } from '../i18n/utils';
+import { t, getLocalizedName } from '../i18n/utils';
+
+interface AppData {
+  slug: string;
+  icon: string;
+  name: Record<string, string>;
+  tagline: Record<string, string>;
+  platforms: string[];
+  status?: Record<string, string>;
+}
+
+interface Props {
+  app: AppData;
+  lang: Lang;
+}
+
+const { app, lang } = Astro.props;
+
+const localizedName = getLocalizedName(app.name, lang);
+const tagline = app.tagline[lang] ?? app.tagline['en'] ?? '';
+const status = app.status?.[lang] ?? app.status?.['en'] ?? '';
+---
+
+<a
+  href={`/${lang}/apps/${app.slug}/`}
+  class="app-card glass-card"
+  aria-label={localizedName}
+>
+  <div class="app-card-icon-wrap">
+    <img
+      src={app.icon}
+      alt={`${localizedName} icon`}
+      class="app-card-icon"
+      loading="lazy"
+      width="72"
+      height="72"
+    />
+  </div>
+  <div class="app-card-body">
+    <div class="app-card-name-row">
+      <h2 class="app-card-name">{localizedName}</h2>
+      {status && <span class="app-card-status">{status}</span>}
+    </div>
+    <p class="app-card-tagline">{tagline}</p>
+  </div>
+  <div class="app-card-arrow" aria-hidden="true">→</div>
+</a>
+
+<style>
+  .app-card {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-md) var(--space-lg);
+    transition:
+      transform var(--duration-fast) var(--ease-spring),
+      box-shadow var(--duration-fast) var(--ease-smooth);
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .app-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .app-card:active {
+    transform: scale(0.98);
+    box-shadow: var(--shadow-sm);
+  }
+
+  /* Icon with squircle mask */
+  .app-card-icon-wrap {
+    flex-shrink: 0;
+    width: 72px;
+    height: 72px;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.04);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .app-card-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Text content */
+  .app-card-body {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .app-card-name-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+
+  .app-card-name {
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--color-text-primary);
+  }
+
+  .app-card-status {
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 8px;
+    border-radius: var(--radius-pill);
+    font-size: 11px;
+    font-weight: 600;
+    background: rgba(91, 92, 255, 0.12);
+    color: var(--color-accent);
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .app-card-tagline {
+    font-size: 14px;
+    color: var(--color-text-secondary);
+    margin-top: 2px;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* Arrow indicator */
+  .app-card-arrow {
+    flex-shrink: 0;
+    font-size: 18px;
+    color: var(--color-text-tertiary);
+    transition: transform var(--duration-fast) var(--ease-spring),
+      color var(--duration-fast) var(--ease-smooth);
+  }
+
+  .app-card:hover .app-card-arrow {
+    transform: translateX(4px);
+    color: var(--color-accent);
+  }
+</style>

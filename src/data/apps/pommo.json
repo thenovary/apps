@@ -1,0 +1,315 @@
+{
+  "slug": "pommo",
+  "order": 1,
+  "icon": "/icons/pommo.png",
+  "name": {
+    "default": "Pommo",
+    "ko": "Pommo",
+    "en": "Pommo",
+    "ja": "Pommo"
+  },
+  "tagline": {
+    "ko": "메신저처럼 편하게, 메모는 깔끔하게",
+    "en": "Memo, but as casual as messaging"
+  },
+  "description": {
+    "ko": "Pommo는 메신저 인터페이스에서 영감을 받은 메모 앱입니다. 채팅하듯 생각을 빠르게 적고, 깔끔하게 정리할 수 있습니다.",
+    "en": "Pommo is a memo app inspired by messenger interfaces. Jot down thoughts as quickly as chatting, and organize them effortlessly."
+  },
+  "platforms": ["ios", "android"],
+  "status": {
+    "ko": "출시 예정",
+    "en": "Coming Soon"
+  },
+  "links": {
+    "appStore": "",
+    "googlePlay": ""
+  },
+  "privacy": {
+    "lastUpdated": {
+      "ko": "2026년 4월 5일",
+      "en": "April 5, 2026"
+    },
+    "sections": [
+      {
+        "title": {
+          "ko": "개요",
+          "en": "Overview"
+        },
+        "content": {
+          "ko": "Pommo는 채팅형 개인 메모 애플리케이션으로, 사용자는 메모방 생성, 텍스트 메모 작성, 사진·동영상·파일 첨부, 알림 설정, 채팅 테마 꾸미기, 폰트·언어·잠금 설정 관리 등의 기능을 이용할 수 있습니다.\n본 애플리케이션은 회원가입을 요구하지 않으며, 사용자 메모 콘텐츠를 위한 개발자 운영 클라우드 서버를 별도로 운영하지 않습니다. 사용자가 생성한 대부분의 콘텐츠는 이용자의 기기에 로컬로 저장됩니다.",
+          "en": "Pommo is a chat-style personal memo application. Users can create memo rooms, write text memos, attach photos, videos, and files, configure notifications, customize chat themes, and manage font, language, and lock settings.\nThis application does not require account registration and does not operate a developer-managed cloud server for user memo content. Most content created by users is stored locally on the user's device."
+        }
+      },
+      {
+        "title": {
+          "ko": "개인정보의 수집 및 이용",
+          "en": "Collection and Use of Personal Information"
+        },
+        "content": {
+          "ko": "개발자는 애플리케이션에서 사용자가 작성한 메모 콘텐츠를 직접 수집하거나 저장하거나, 이를 위한 원격 데이터베이스를 운영하지 않습니다.\n사용자가 선택한 기능에 따라 애플리케이션은 기기 내에서 다음과 같은 정보를 처리할 수 있습니다.\n메모방 이름, 메모 텍스트, 메모 작성 시각 정보\n사용자가 선택한 사진, 동영상, 파일 첨부자료\n프로필 이미지, 배경 이미지, 폰트 파일, 테마 설정, 언어 설정, 앱 잠금 설정\n유료 기능 해제를 위한 구매 상태 정보",
+          "en": "The developer does not directly collect or store memo content written by users within the application, nor operate a remote database for such purposes.\nDepending on the features selected by the user, the application may process the following information on-device:\nMemo room names, memo text, and memo timestamp information\nPhotos, videos, and file attachments selected by the user\nProfile images, background images, font files, theme settings, language settings, and app lock settings\nPurchase status information for unlocking paid features"
+        }
+      },
+      {
+        "title": {
+          "ko": "카메라, 사진, 파일 및 알림 접근",
+          "en": "Camera, Photos, Files, and Notification Access"
+        },
+        "content": {
+          "ko": "애플리케이션은 미디어 첨부, 폰트 파일 추가, 백업 내보내기, 백업 가져오기와 같은 사용자가 요청한 기능을 지원하기 위해 사진 보관함, 카메라, 파일 권한을 요청할 수 있습니다.\n이 권한을 통해 사용자가 선택하거나 생성한 콘텐츠는 사용자가 직접 내보내기를 선택하지 않는 한 이용자의 기기에 로컬로 저장됩니다. 개발자는 해당 콘텐츠를 별도로 업로드하거나 열람하지 않습니다.",
+          "en": "The application may request access to the photo library, camera, and files in order to support user-initiated features such as media attachments, adding font files, exporting backups, and importing backups.\nContent selected or created through these permissions is stored locally on the user's device unless the user explicitly chooses to export it. The developer does not independently upload or access such content."
+        }
+      },
+      {
+        "title": {
+          "ko": "제3자 서비스",
+          "en": "Third-Party Services"
+        },
+        "content": {
+          "ko": "애플리케이션은 다음과 같은 제3자 서비스를 사용할 수 있습니다.\nGoogle AdMob (무료 버전 광고)\nRevenueCat (결제 및 구매 권한 관리)\nApple App Store / Google Play Billing (인앱 결제 처리 및 복원)\n로컬 알림, 미디어 선택, 파일 선택을 위한 운영체제 플랫폼 서비스\n이들 제3자 서비스는 각자의 개인정보 처리방침에 따라 기기 정보, 광고 식별자, 결제 정보, IP 주소, 앱 사용 정보 등을 자동으로 처리할 수 있습니다. 개발자는 이들 제공자가 독립적으로 수행하는 데이터 처리 방식을 통제하지 않습니다.",
+          "en": "The application may use the following third-party services:\nGoogle AdMob (advertising in the free version)\nRevenueCat (payment and purchase entitlement management)\nApple App Store / Google Play Billing (in-app purchase processing and restoration)\nOperating system platform services for local notifications, media selection, and file selection\nThese third-party services may automatically process information such as device identifiers, advertising IDs, payment information, IP addresses, and app usage data in accordance with their respective privacy policies. The developer does not control the data processing practices independently carried out by these providers."
+        }
+      },
+      {
+        "title": {
+          "ko": "데이터 저장",
+          "en": "Data Storage"
+        },
+        "content": {
+          "ko": "메모 콘텐츠, 첨부파일, 대부분의 설정 정보는 이용자의 기기에 로컬로 저장됩니다.\n사용자가 백업 내보내기를 선택한 경우, 백업 파일은 사용자가 지정한 위치에 저장됩니다. 개발자는 해당 콘텐츠를 위한 자체 클라우드 백업 또는 동기화 서버를 제공하지 않습니다.",
+          "en": "Memo content, attachments, and most settings are stored locally on the user's device.\nIf the user chooses to export a backup, the backup file is saved to the location specified by the user. The developer does not provide a proprietary cloud backup or sync server for such content."
+        }
+      },
+      {
+        "title": {
+          "ko": "데이터 공유",
+          "en": "Data Sharing"
+        },
+        "content": {
+          "ko": "개발자는 개인정보를 판매하지 않습니다. 다만 광고, 결제 처리, 구매 복원 및 플랫폼 기능 제공에 필요한 범위에서만 제3자 제공자가 데이터를 처리할 수 있습니다.",
+          "en": "The developer does not sell personal information. Third-party providers may process data only to the extent necessary to deliver advertising, payment processing, purchase restoration, and platform functionality."
+        }
+      },
+      {
+        "title": {
+          "ko": "아동의 개인정보 보호",
+          "en": "Protection of Children's Privacy"
+        },
+        "content": {
+          "ko": "본 애플리케이션은 만 13세 미만 아동을 주요 대상으로 하지 않으며, 개발자는 아동의 개인정보를 고의로 수집하지 않습니다.",
+          "en": "This application is not directed primarily at children under the age of 13, and the developer does not knowingly collect personal information from children."
+        }
+      },
+      {
+        "title": {
+          "ko": "데이터 보관",
+          "en": "Data Retention"
+        },
+        "content": {
+          "ko": "개발자는 사용자 메모 콘텐츠를 위한 원격 서버를 운영하지 않으므로, 개발자 측 원격 보관은 이루어지지 않습니다. 이용자는 채팅방, 메모, 첨부파일을 직접 삭제하거나, 본인이 관리하는 백업 파일을 삭제하거나, 애플리케이션을 제거함으로써 로컬 데이터를 삭제할 수 있습니다.",
+          "en": "As the developer does not operate a remote server for user memo content, no remote retention by the developer takes place. Users may delete local data by removing individual chat rooms, memos, or attachments, deleting backup files they manage themselves, or uninstalling the application."
+        }
+      },
+      {
+        "title": {
+          "ko": "보안",
+          "en": "Security"
+        },
+        "content": {
+          "ko": "애플리케이션은 기기 내 저장소와 운영체제 권한 제어 기능에 의존합니다. 합리적인 수준에서 안전한 동작을 지원하지만, 어떠한 저장 또는 전송 방식도 완전한 보안을 보장할 수는 없습니다.",
+          "en": "The application relies on on-device storage and operating system permission controls. While reasonable measures are taken to support secure operation, no method of storage or transmission can guarantee absolute security."
+        }
+      },
+      {
+        "title": {
+          "ko": "변경 사항",
+          "en": "Changes to This Policy"
+        },
+        "content": {
+          "ko": "본 개인정보 처리방침은 기능 변경, 법적 요구사항 또는 제3자 서비스 변경 등에 따라 필요 시 수정될 수 있으며, 변경 시 본 페이지에 수정된 시행일과 함께 반영됩니다.",
+          "en": "This Privacy Policy may be updated as necessary due to changes in features, legal requirements, or third-party services. Any changes will be reflected on this page with a revised effective date."
+        }
+      },
+      {
+        "title": {
+          "ko": "문의",
+          "en": "Contact"
+        },
+        "content": {
+          "ko": "infodeskline@gmail.com",
+          "en": "infodeskline@gmail.com"
+        }
+      }
+    ]
+  },
+  "terms": {
+    "lastUpdated": {
+      "ko": "2026년 4월 8일",
+      "en": "April 8, 2026"
+    },
+    "sections": [
+      {
+        "title": {
+          "ko": "제1조 목적",
+          "en": "Article 1. Purpose"
+        },
+        "content": {
+          "ko": "이 약관은 운영자가 제공하는 Pommo 모바일 애플리케이션 및 이에 부수하는 관련 서비스(이하 \"서비스\")의 이용과 관련하여 운영자와 이용자 간의 권리, 의무 및 책임사항을 정함을 목적으로 합니다.",
+          "en": "These Terms of Service govern the rights, obligations, and responsibilities between the operator and users in connection with the use of the Pommo mobile application and its associated services (hereinafter \"Service\") provided by the operator."
+        }
+      },
+      {
+        "title": {
+          "ko": "제2조 정의",
+          "en": "Article 2. Definitions"
+        },
+        "content": {
+          "ko": "이 약관에서 사용하는 용어의 뜻은 다음과 같습니다.\n1. \"서비스\"란 운영자가 제공하는 Pommo 앱 및 그 안에서 제공되는 채팅형 메모 작성, 사진·동영상·파일 첨부, 잠금, 테마/폰트 설정, 백업 가져오기·내보내기, 광고, 유료 기능 제공 등 일체의 기능을 말합니다.\n2. \"이용자\"란 이 약관에 따라 서비스를 설치하거나 사용하는 자를 말합니다.\n3. \"콘텐츠\"란 이용자가 서비스에 입력, 저장, 첨부 또는 생성하는 메모, 채팅방 이름, 이미지, 동영상, 파일, 링크, 설정값 등 일체의 정보를 말합니다.\n4. \"유료서비스\"란 앱 내 결제를 통해 이용할 수 있는 광고 제거, 테마 기능, 프리미엄 기능, 기부 기능 등 운영자가 유상으로 제공하는 기능을 말합니다.\n5. \"앱마켓\"이란 Apple App Store, Google Play 등 서비스 결제와 배포에 이용되는 외부 플랫폼을 말합니다.",
+          "en": "The terms used in these Terms of Service are defined as follows:\n1. \"Service\" refers to the Pommo app provided by the operator and all features offered within it, including chat-style memo creation, photo/video/file attachments, app lock, theme/font settings, backup import/export, advertising, and paid feature access.\n2. \"User\" refers to any person who installs or uses the Service in accordance with these Terms.\n3. \"Content\" refers to all information that a user inputs, stores, attaches, or creates within the Service, including memos, chat room names, images, videos, files, links, and settings.\n4. \"Paid Service\" refers to features provided by the operator for a fee that are accessible through in-app purchases, including ad removal, theme features, premium features, and donation features.\n5. \"App Store\" refers to external platforms used for payment and distribution of the Service, such as Apple App Store and Google Play."
+        }
+      },
+      {
+        "title": {
+          "ko": "제3조 약관의 효력 및 변경",
+          "en": "Article 3. Effect and Amendment of Terms"
+        },
+        "content": {
+          "ko": "1. 이 약관은 서비스 내 화면, 앱마켓 소개 페이지, 운영자가 운영하는 웹페이지 등 이용자가 확인할 수 있는 방법으로 게시함으로써 효력이 발생합니다.\n2. 운영자는 관련 법령을 위반하지 않는 범위에서 이 약관을 개정할 수 있습니다.\n3. 운영자가 약관을 개정하는 경우에는 적용일자 및 개정사유를 명시하여 적용일자 전부터 서비스 내 공지 또는 그에 준하는 방법으로 안내합니다.\n4. 이용자에게 불리한 내용으로 변경되는 경우에는 적용일자 30일 전부터, 그 외의 변경은 적용일자 7일 전부터 공지하는 것을 원칙으로 합니다.\n5. 이용자가 개정약관에 동의하지 않는 경우 서비스 이용을 중단하고 앱을 삭제할 수 있습니다. 다만, 관련 법령상 별도의 동의가 필요한 사항은 해당 법령에 따릅니다.",
+          "en": "1. These Terms take effect upon being posted in a manner accessible to users, such as within the Service, on the app store listing page, or on a webpage operated by the operator.\n2. The operator may amend these Terms within the limits permitted by applicable law.\n3. When amending these Terms, the operator will specify the effective date and reason for the amendment and provide notice through an in-app announcement or equivalent method prior to the effective date.\n4. As a general rule, changes unfavorable to users will be announced at least 30 days before the effective date; all other changes will be announced at least 7 days in advance.\n5. If a user does not agree to the amended Terms, they may discontinue use of the Service and uninstall the application. Matters requiring separate consent under applicable law shall be governed by such law."
+        }
+      },
+      {
+        "title": {
+          "ko": "제4조 서비스의 내용",
+          "en": "Article 4. Description of the Service"
+        },
+        "content": {
+          "ko": "1. 서비스는 개인 메모 및 기록 관리를 위한 채팅형 메모 앱입니다.\n2. 서비스의 주요 기능은 다음과 같습니다.\n채팅방 생성, 수정, 삭제\n텍스트 메모 작성 및 편집\n사진, 동영상, 파일 첨부 및 열람\n링크 인식 및 외부 앱을 통한 링크 열기\n앱 잠금(PIN) 설정\n테마, 색상, 폰트, 배경 등 개인화 설정\n로컬 백업 파일 내보내기 및 가져오기\n무료 버전 광고 표시 및 유료 기능 구매\n3. 서비스는 별도 회원가입 없이 이용할 수 있으며, 현재 운영자가 제공하는 개발자 운영 클라우드 동기화 기능은 포함하지 않습니다.\n4. 운영자는 서비스의 품질 향상, 기술상 필요, 운영정책 변경, 앱마켓 또는 운영체제 정책 변경 등에 따라 서비스의 일부 기능을 변경, 추가 또는 중단할 수 있습니다.",
+          "en": "1. The Service is a chat-style memo application for personal note-taking and record management.\n2. The main features of the Service include:\nCreating, editing, and deleting chat rooms\nWriting and editing text memos\nAttaching and viewing photos, videos, and files\nLink detection and opening links via external apps\nApp lock (PIN) configuration\nPersonalization settings including themes, colors, fonts, and backgrounds\nExporting and importing local backup files\nDisplaying advertisements in the free version and purchasing paid features\n3. The Service can be used without a separate account registration and does not currently include a developer-operated cloud sync feature.\n4. The operator may modify, add, or discontinue certain features of the Service as needed for quality improvement, technical requirements, changes in operating policy, or changes in app store or operating system policies."
+        }
+      },
+      {
+        "title": {
+          "ko": "제5조 이용계약의 성립 및 이용조건",
+          "en": "Article 5. Formation of Service Agreement and Conditions of Use"
+        },
+        "content": {
+          "ko": "1. 이용자가 서비스를 설치, 다운로드 또는 사용하면 이 약관 및 개인정보 처리방침에 동의한 것으로 봅니다.\n2. 서비스 이용에는 인터넷 연결, 이용자 기기, 운영체제 버전, 저장공간, 앱마켓 계정 등 외부 조건이 필요할 수 있으며, 해당 조건 미충족으로 인한 이용 제한은 운영자의 귀책사유가 없는 한 운영자가 책임지지 않습니다.\n3. 미성년자가 유료서비스를 구매하는 경우에는 관련 법령에 따라 법정대리인의 동의가 필요할 수 있습니다.",
+          "en": "1. By installing, downloading, or using the Service, a user is deemed to have agreed to these Terms and the Privacy Policy.\n2. Use of the Service may require external conditions such as an internet connection, a compatible device, a supported operating system version, sufficient storage, and an app store account. The operator is not responsible for any restrictions on use arising from failure to meet such conditions, except where attributable to the operator.\n3. Where a minor purchases a Paid Service, the consent of a legal guardian may be required in accordance with applicable law."
+        }
+      },
+      {
+        "title": {
+          "ko": "제6조 이용자의 의무",
+          "en": "Article 6. User Obligations"
+        },
+        "content": {
+          "ko": "이용자는 서비스를 이용하면서 다음 행위를 하여서는 안 됩니다.\n1. 법령 또는 공서양속에 반하는 콘텐츠를 저장, 첨부, 배포 또는 이용하는 행위\n2. 타인의 저작권, 초상권, 개인정보, 기타 권리를 침해하는 콘텐츠를 업로드하거나 공유하는 행위\n3. 악성코드, 불법 파일, 유해한 링크 등 서비스 또는 제3자에게 피해를 줄 수 있는 자료를 이용하는 행위\n4. 앱의 정상 동작을 방해하거나 광고 노출, 구매 검증, 잠금 기능 등을 비정상적으로 우회 또는 변조하려는 행위\n5. 운영자 또는 제3자의 지식재산권을 침해하는 행위\n6. 기타 관련 법령 또는 운영정책에 위반되는 행위\n이용자는 자신의 기기 보안, 백업 파일 보관, 앱마켓 계정 관리 및 외부 링크 이용에 대해 스스로 주의하여야 합니다.",
+          "en": "Users must not engage in any of the following activities while using the Service:\n1. Storing, attaching, distributing, or using content that violates applicable laws or public order and morals\n2. Uploading or sharing content that infringes upon the copyright, portrait rights, personal information, or other rights of third parties\n3. Using materials such as malware, illegal files, or harmful links that may cause harm to the Service or third parties\n4. Interfering with the normal operation of the application, or attempting to abnormally bypass or tamper with ad display, purchase verification, lock functionality, or other features\n5. Infringing upon the intellectual property rights of the operator or third parties\n6. Any other conduct that violates applicable laws or the operator's policies\nUsers are responsible for maintaining the security of their own devices, safeguarding backup files, managing their app store accounts, and exercising caution when accessing external links."
+        }
+      },
+      {
+        "title": {
+          "ko": "제7조 권한, 기기 기능 및 제3자 연동",
+          "en": "Article 7. Permissions, Device Features, and Third-Party Integrations"
+        },
+        "content": {
+          "ko": "1. 서비스는 사진, 동영상, 파일 첨부, 백업 불러오기·내보내기, 광고 제공 등을 위하여 기기 권한 또는 운영체제 기능을 사용할 수 있습니다.\n2. 이용자는 권한 요청을 거부할 수 있으나, 이 경우 일부 기능이 제한되거나 정상적으로 작동하지 않을 수 있습니다.\n3. 서비스는 다음과 같은 제3자 서비스 또는 플랫폼과 연동될 수 있습니다.\nGoogle AdMob\nRevenueCat\nApple App Store\nGoogle Play\n각 운영체제가 제공하는 사진 보관함, 파일 선택, 외부 링크 열기 기능\n4. 제3자 서비스의 이용에는 해당 사업자의 약관 및 정책이 적용될 수 있으며, 운영자는 자신의 귀책사유가 없는 한 제3자 서비스의 장애, 정책 변경 또는 중단에 대해 책임지지 않습니다.",
+          "en": "1. The Service may use device permissions or operating system features for purposes such as photo/video/file attachments, backup import/export, and advertising.\n2. Users may decline permission requests; however, doing so may limit or disable certain features.\n3. The Service may integrate with the following third-party services or platforms:\nGoogle AdMob\nRevenueCat\nApple App Store\nGoogle Play\nPhoto library, file picker, and external link functionality provided by each operating system\n4. The use of third-party services may be subject to the terms and policies of the respective providers. The operator is not responsible for any outages, policy changes, or discontinuation of third-party services, except where attributable to the operator."
+        }
+      },
+      {
+        "title": {
+          "ko": "제8조 유료서비스, 결제 및 청약철회",
+          "en": "Article 8. Paid Services, Payments, and Cancellation"
+        },
+        "content": {
+          "ko": "1. 운영자는 앱 내에서 유료서비스의 종류, 가격, 제공 내용 등을 표시합니다. 실제 결제금액은 이용자가 결제 시점에 확인하는 앱마켓 표시 가격을 기준으로 합니다.\n2. 2026년 4월 8일 현재 서비스는 다음과 같은 일회성 인앱결제 상품 구성을 전제로 운영됩니다.\npommo_premium: 광고 제거 + 테마 기능\npommo_ad_removal: 광고 제거\npommo_theme: 테마 기능\npommo_donation: 기부형 소비성 상품\n3. pommo_premium, pommo_ad_removal, pommo_theme는 비소모성 상품으로, 동일한 앱마켓 계정 범위에서 복원이 지원될 수 있습니다.\n4. pommo_donation은 소비성 상품으로, 구매 후 즉시 사용된 것으로 처리될 수 있으며 원칙적으로 복원 대상이 아닙니다.\n5. 결제, 결제취소, 영수증, 세금, 환율, 결제수단 승인 및 앱마켓 계정 상태는 각 앱마켓 및 결제사업자의 정책에 따를 수 있습니다.\n6. 이용자의 청약철회, 환불 및 계약해제는 관련 법령과 앱마켓 정책에 따릅니다. 다만 디지털콘텐츠 또는 유료기능 제공이 즉시 개시되는 상품의 특성상, 법령이 허용하는 범위에서 청약철회가 제한될 수 있습니다.\n7. 유료서비스에 하자 또는 미제공 등 운영자의 귀책사유가 있는 경우, 운영자는 관련 법령이 정하는 바에 따라 환불 또는 적절한 조치를 취합니다.",
+          "en": "1. The operator displays the types, prices, and descriptions of Paid Services within the application. The actual amount charged is based on the price shown in the app store at the time of purchase.\n2. As of April 8, 2026, the Service operates on the basis of the following one-time in-app purchase products:\npommo_premium: Ad removal + theme features\npommo_ad_removal: Ad removal\npommo_theme: Theme features\npommo_donation: Consumable donation product\n3. pommo_premium, pommo_ad_removal, and pommo_theme are non-consumable products and may support restoration within the same app store account.\n4. pommo_donation is a consumable product that may be treated as used immediately upon purchase and is generally not eligible for restoration.\n5. Payment processing, cancellations, receipts, taxes, currency conversion, payment method authorization, and app store account status may be subject to the policies of the respective app store and payment provider.\n6. User cancellations, refunds, and contract terminations are governed by applicable law and app store policies. However, due to the nature of products that provide immediate access to digital content or paid features, the right of cancellation may be limited to the extent permitted by law.\n7. Where a Paid Service is defective or not provided due to reasons attributable to the operator, the operator will issue a refund or take appropriate action in accordance with applicable law."
+        }
+      },
+      {
+        "title": {
+          "ko": "제9조 광고",
+          "en": "Article 9. Advertising"
+        },
+        "content": {
+          "ko": "1. 무료 버전 이용자에게는 서비스 내 광고가 노출될 수 있습니다.\n2. 광고 제거 유료서비스를 구매한 이용자에게는 운영정책상 정한 범위 내에서 광고 노출이 중단됩니다.\n3. 광고는 제3자 광고사업자가 제공할 수 있으며, 광고 내용, 표시 방식, 추적 설정 여부는 이용자의 기기 설정, 운영체제 정책 및 제3자 정책에 따라 달라질 수 있습니다.\n4. 이용자가 광고 또는 외부 링크를 통하여 이동한 외부 서비스의 거래, 이용 또는 손해에 관하여는 해당 외부 서비스 제공자가 책임을 부담하며, 운영자는 자신의 귀책사유가 없는 한 책임을 지지 않습니다.",
+          "en": "1. Users of the free version may be shown advertisements within the Service.\n2. Users who purchase the ad removal Paid Service will have advertisements suppressed within the scope defined by the operator's policies.\n3. Advertisements may be provided by third-party advertising networks. The content, display format, and tracking settings of advertisements may vary depending on the user's device settings, operating system policies, and third-party policies.\n4. Responsibility for any transactions, use, or damages arising from external services accessed through advertisements or external links rests with the respective external service provider. The operator is not liable except where attributable to the operator."
+        }
+      },
+      {
+        "title": {
+          "ko": "제10조 콘텐츠의 저장, 백업 및 데이터 관리",
+          "en": "Article 10. Content Storage, Backup, and Data Management"
+        },
+        "content": {
+          "ko": "1. 서비스에 저장되는 대부분의 메모와 첨부파일은 이용자 기기에 로컬로 저장됩니다.\n2. 운영자는 이용자의 메모 콘텐츠를 위한 별도의 개발자 운영 클라우드 동기화 서비스를 제공하지 않습니다.\n3. 이용자가 백업 파일을 내보내는 경우, 해당 파일은 이용자가 선택한 저장 위치에 저장되며 그 관리 책임은 이용자에게 있습니다.\n4. 이용자가 백업 파일을 가져오면 현재 기기에 저장된 메모, 채팅방, 첨부파일, 폰트, 테마 등 로컬 데이터가 백업 내용으로 교체될 수 있습니다.\n5. 현재 앱 구현 기준으로 구매 정보와 비밀번호 관련 정보는 백업 복원 대상에 포함되지 않을 수 있습니다.\n6. 이용자의 기기 고장, 운영체제 오류, 저장공간 부족, 계정 문제, 오조작, 백업 파일 분실 또는 외부 저장 위치의 보안 문제로 인한 데이터 손실에 대하여 운영자는 자신의 귀책사유가 없는 한 책임을 지지 않습니다.",
+          "en": "1. Most memos and attachments saved in the Service are stored locally on the user's device.\n2. The operator does not provide a developer-operated cloud sync service for user memo content.\n3. When a user exports a backup file, the file is saved to the storage location selected by the user, and the user is responsible for managing it.\n4. Importing a backup file may replace local data currently stored on the device — including memos, chat rooms, attachments, fonts, and themes — with the contents of the backup.\n5. Based on the current implementation of the application, purchase information and password-related information may not be included in backup restoration.\n6. The operator is not responsible for data loss resulting from device failure, operating system errors, insufficient storage, account issues, user error, loss of a backup file, or security vulnerabilities at an external storage location, except where attributable to the operator."
+        }
+      },
+      {
+        "title": {
+          "ko": "제11조 지식재산권",
+          "en": "Article 11. Intellectual Property Rights"
+        },
+        "content": {
+          "ko": "1. 서비스, 앱 디자인, 로고, 이미지, 문구, 소스코드, 데이터베이스 및 이에 관한 지식재산권은 운영자 또는 정당한 권리자에게 귀속됩니다.\n2. 이용자가 서비스에 저장한 콘텐츠의 권리와 책임은 해당 이용자 또는 정당한 권리자에게 있습니다.\n3. 운영자는 서비스 제공에 필요한 범위를 제외하고 이용자의 로컬 메모 콘텐츠를 임의로 이용하지 않습니다.\n4. 이용자는 운영자의 사전 서면 동의 없이 서비스를 복제, 배포, 판매, 대여, 역설계, 2차적저작물 작성 등으로 이용하여서는 안 됩니다. 다만 관련 법령에서 허용하는 범위는 예외로 합니다.",
+          "en": "1. All intellectual property rights in and to the Service, app design, logos, images, text, source code, databases, and related materials belong to the operator or the respective rightful owner.\n2. Rights and responsibilities over content stored by a user within the Service rest with that user or the respective rightful owner.\n3. The operator does not use a user's locally stored memo content for any purpose beyond what is necessary to provide the Service.\n4. Users may not reproduce, distribute, sell, lease, reverse engineer, create derivative works of, or otherwise exploit the Service without the prior written consent of the operator, except as permitted by applicable law."
+        }
+      },
+      {
+        "title": {
+          "ko": "제12조 운영자의 의무",
+          "en": "Article 12. Operator Obligations"
+        },
+        "content": {
+          "ko": "1. 운영자는 관련 법령과 이 약관을 준수하며 서비스를 안정적으로 제공하기 위해 노력합니다.\n2. 운영자는 서비스에 중대한 장애나 보안상 문제가 확인되는 경우 합리적인 범위에서 이를 점검하고 수정하도록 노력합니다.\n3. 운영자는 이용자의 개인정보를 관련 법령 및 개인정보 처리방침에 따라 처리합니다.\n4. 운영자는 이용자의 정당한 의견 또는 문의가 접수되는 경우 합리적인 기간 내에 이를 처리하도록 노력합니다.",
+          "en": "1. The operator endeavors to comply with applicable laws and these Terms and to provide the Service in a stable manner.\n2. In the event of a significant outage or security issue with the Service, the operator will make reasonable efforts to investigate and resolve it.\n3. The operator processes users' personal information in accordance with applicable law and the Privacy Policy.\n4. When a legitimate inquiry or feedback is received from a user, the operator endeavors to address it within a reasonable time."
+        }
+      },
+      {
+        "title": {
+          "ko": "제13조 서비스의 변경, 중단 및 이용제한",
+          "en": "Article 13. Modification, Suspension, and Restriction of the Service"
+        },
+        "content": {
+          "ko": "1. 운영자는 다음 각 호의 사유가 있는 경우 서비스의 전부 또는 일부를 변경하거나 일시 중단할 수 있습니다.\n시스템 점검, 유지보수, 업데이트 또는 보안 대응이 필요한 경우\n운영체제, 앱마켓, 결제사업자 또는 제3자 서비스 정책이 변경된 경우\n천재지변, 통신장애, 기기 제조사 또는 플랫폼 정책 변경 등 불가항력적 사유가 있는 경우\n2. 운영자는 합리적으로 가능한 범위에서 사전에 이를 공지하되, 긴급한 장애 또는 보안 대응 등 불가피한 경우 사후 공지할 수 있습니다.\n3. 이용자가 이 약관 또는 관련 법령을 위반하여 서비스의 정상 운영을 방해하는 경우, 운영자는 필요한 범위에서 서비스 이용을 제한하거나 고객지원을 거절할 수 있습니다.",
+          "en": "1. The operator may modify or temporarily suspend all or part of the Service for any of the following reasons:\nSystem inspection, maintenance, updates, or security response is required\nChanges occur in the policies of the operating system, app store, payment provider, or third-party services\nForce majeure events occur, such as natural disasters, communication failures, or changes in device manufacturer or platform policies\n2. The operator will provide advance notice to the extent reasonably practicable; however, in unavoidable circumstances such as emergency outages or security responses, notice may be given after the fact.\n3. If a user interferes with the normal operation of the Service by violating these Terms or applicable law, the operator may restrict the user's access to the Service or decline to provide customer support to the extent necessary."
+        }
+      },
+      {
+        "title": {
+          "ko": "제14조 손해배상 및 면책",
+          "en": "Article 14. Liability and Disclaimer"
+        },
+        "content": {
+          "ko": "1. 운영자와 이용자는 자신의 귀책사유로 상대방에게 손해를 입힌 경우 관련 법령에 따라 그 손해를 배상할 책임이 있습니다.\n2. 운영자는 무료로 제공되는 서비스 부분에 대하여 특별한 사정이 없는 한 서비스의 완전무결성, 지속성 또는 특정 목적 적합성을 보증하지 않습니다.\n3. 운영자는 자신의 고의 또는 중대한 과실이 없는 한 다음 각 호의 사유로 발생한 손해에 대하여 책임을 지지 않습니다.\n이용자의 기기 분실, 고장, 교체, 저장공간 부족 또는 운영체제 문제\n이용자의 삭제, 백업 오용, 외부 저장매체 관리 소홀\n제3자 서비스 장애, 앱마켓 정책 변경, 외부 링크 또는 외부 파일 이용\n이용자가 관련 법령 또는 이 약관을 위반하여 발생한 손해\n4. 운영자는 법령상 허용되지 않는 범위에서 이용자의 권리를 제한하거나 책임을 면제하지 않습니다.",
+          "en": "1. The operator and users are each liable for damages caused to the other party due to their own fault, in accordance with applicable law.\n2. With respect to portions of the Service provided free of charge, the operator does not warrant the completeness, continuity, or fitness for a particular purpose of the Service, except in cases of special circumstances.\n3. The operator is not liable for damages arising from the following causes, except in cases of the operator's willful misconduct or gross negligence:\nLoss, malfunction, replacement, insufficient storage, or operating system issues on the user's device\nUser-initiated deletion, misuse of backup features, or inadequate management of external storage media\nThird-party service outages, app store policy changes, or the use of external links or external files\nDamages caused by a user's violation of applicable law or these Terms\n4. The operator does not limit users' rights or disclaim liability to any extent not permitted by applicable law."
+        }
+      },
+      {
+        "title": {
+          "ko": "제15조 개인정보 보호",
+          "en": "Article 15. Privacy"
+        },
+        "content": {
+          "ko": "운영자는 이용자의 개인정보를 관련 법령 및 별도로 게시하는 개인정보 처리방침에 따라 처리합니다. 개인정보 처리에 관한 구체적인 사항은 개인정보 처리방침을 따릅니다.",
+          "en": "The operator processes users' personal information in accordance with applicable law and the separately published Privacy Policy. Specific details regarding the handling of personal information are governed by the Privacy Policy."
+        }
+      },
+      {
+        "title": {
+          "ko": "제16조 준거법 및 관할",
+          "en": "Article 16. Governing Law and Jurisdiction"
+        },
+        "content": {
+          "ko": "1. 이 약관은 대한민국 법률에 따라 해석되고 적용됩니다.\n2. 서비스 이용과 관련하여 운영자와 이용자 사이에 분쟁이 발생한 경우, 당사자는 우선 성실히 협의하여 해결하도록 노력합니다.\n3. 협의로 해결되지 않는 분쟁에 대해서는 대한민국 민사소송법 등 관계 법령에 따른 관할법원을 제1심 전속관할법원으로 합니다.",
+          "en": "1. These Terms shall be interpreted and governed by the laws of the Republic of Korea.\n2. In the event of a dispute between the operator and a user arising from the use of the Service, the parties shall first endeavor to resolve the matter through good-faith negotiation.\n3. For disputes that cannot be resolved through negotiation, the competent court under applicable law, including the Civil Procedure Act of the Republic of Korea, shall have exclusive jurisdiction as the court of first instance."
+        }
+      }
+    ]
+  },
+  "licenses": []
+}

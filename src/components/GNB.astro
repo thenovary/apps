@@ -1,0 +1,291 @@
+---
+/**
+ * GNB (Global Navigation Bar)
+ * - Glassmorphism effect with backdrop-filter
+ * - Fixed top position
+ * - Language toggle (KO / EN)
+ * - Mobile-responsive hamburger menu
+ */
+import type { Lang } from '../i18n/utils';
+import { t } from '../i18n/utils';
+
+interface Props {
+  lang: Lang;
+  currentPath: string;
+}
+
+const { lang, currentPath } = Astro.props;
+
+// Swap the lang segment in the path for language switching
+// e.g. /ko/apps/pommo/ → /en/apps/pommo/
+const koUrl = currentPath.replace(/^\/(ko|en)(\/|$)/, '/ko$2') || '/ko/';
+const enUrl = currentPath.replace(/^\/(ko|en)(\/|$)/, '/en$2') || '/en/';
+
+const navLinks = [
+  { href: `/${lang}/#apps`, activeCheck: `/${lang}/`, label: t(lang, 'nav.apps') },
+  { href: `/${lang}/contact/`, activeCheck: `/${lang}/contact/`, label: t(lang, 'nav.contact') },
+];
+---
+
+<header class="gnb" role="banner">
+  <div class="container gnb-inner">
+    <!-- Logo -->
+    <a href={`/${lang}/`} class="gnb-logo" aria-label="thenovary home">
+      <span class="logo-text">thenovary</span>
+    </a>
+
+    <!-- Desktop nav -->
+    <nav class="gnb-nav" aria-label="Main navigation">
+      {navLinks.map(link => (
+        <a
+          href={link.href}
+          class={`gnb-link ${currentPath === link.activeCheck ? 'is-active' : ''}`}
+        >
+          {link.label}
+        </a>
+      ))}
+    </nav>
+
+    <!-- Right controls: lang toggle + hamburger -->
+    <div class="gnb-controls">
+      <!-- Language segment control -->
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <a
+          href={koUrl}
+          class={`lang-btn ${lang === 'ko' ? 'is-active' : ''}`}
+          aria-pressed={lang === 'ko'}
+        >KO</a>
+        <a
+          href={enUrl}
+          class={`lang-btn ${lang === 'en' ? 'is-active' : ''}`}
+          aria-pressed={lang === 'en'}
+        >EN</a>
+      </div>
+
+      <!-- Mobile hamburger -->
+      <button
+        class="hamburger"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        id="hamburger-btn"
+      >
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile menu drawer -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <nav aria-label="Mobile navigation">
+      {navLinks.map(link => (
+        <a href={link.href} class="mobile-link">{link.label}</a>
+      ))}
+    </nav>
+  </div>
+</header>
+
+<script>
+  // Mobile hamburger toggle
+  const btn = document.getElementById('hamburger-btn');
+  const menu = document.getElementById('mobile-menu');
+
+  btn?.addEventListener('click', () => {
+    const isOpen = menu?.classList.toggle('is-open');
+    btn.setAttribute('aria-expanded', String(isOpen));
+    menu?.setAttribute('aria-hidden', String(!isOpen));
+  });
+
+  // Close menu on link click
+  menu?.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.remove('is-open');
+      btn?.setAttribute('aria-expanded', 'false');
+      menu.setAttribute('aria-hidden', 'true');
+    });
+  });
+</script>
+
+<style>
+  /* ---- GNB Shell ---- */
+  .gnb {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    height: var(--gnb-height);
+    background: rgba(245, 245, 247, 0.75);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .gnb-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    gap: var(--space-lg);
+  }
+
+  /* ---- Logo ---- */
+  .gnb-logo {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+  }
+
+  .logo-text {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: var(--color-text-primary);
+  }
+
+  /* ---- Nav links ---- */
+  .gnb-nav {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+  }
+
+  .gnb-link {
+    padding: 8px 14px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    border-radius: var(--radius-pill);
+    transition:
+      color var(--duration-fast) var(--ease-smooth),
+      background var(--duration-fast) var(--ease-smooth);
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  .gnb-link:hover,
+  .gnb-link.is-active {
+    color: var(--color-text-primary);
+    background: rgba(0, 0, 0, 0.05);
+  }
+
+  .gnb-link.is-active {
+    font-weight: 600;
+  }
+
+  /* ---- Controls (lang + hamburger) ---- */
+  .gnb-controls {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    flex-shrink: 0;
+  }
+
+  /* ---- Language toggle ---- */
+  .lang-toggle {
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.06);
+    border-radius: var(--radius-pill);
+    padding: 3px;
+  }
+
+  .lang-btn {
+    padding: 5px 12px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    border-radius: var(--radius-pill);
+    transition:
+      background var(--duration-fast) var(--ease-smooth),
+      color var(--duration-fast) var(--ease-smooth);
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .lang-btn.is-active {
+    background: var(--color-surface-solid);
+    color: var(--color-text-primary);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .lang-btn:active {
+    transform: scale(0.95);
+  }
+
+  /* ---- Hamburger ---- */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius-sm);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .hamburger-line {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: var(--color-text-primary);
+    border-radius: 2px;
+    transition: transform var(--duration-normal) var(--ease-smooth),
+      opacity var(--duration-normal) var(--ease-smooth);
+  }
+
+  /* ---- Mobile menu drawer ---- */
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    padding: var(--space-sm) var(--space-lg) var(--space-md);
+    background: rgba(245, 245, 247, 0.92);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--color-border);
+    gap: var(--space-xs);
+  }
+
+  .mobile-link {
+    padding: 12px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-text-primary);
+    border-radius: var(--radius-md);
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    transition: background var(--duration-fast) var(--ease-smooth);
+  }
+
+  .mobile-link:hover {
+    background: rgba(0, 0, 0, 0.05);
+  }
+
+  /* ---- Responsive ---- */
+  @media (max-width: 640px) {
+    .gnb-nav {
+      display: none;
+    }
+
+    .hamburger {
+      display: flex;
+    }
+
+    .mobile-menu {
+      display: none;
+    }
+
+    .mobile-menu.is-open {
+      display: flex;
+    }
+  }
+</style>

@@ -1,0 +1,210 @@
+---
+/**
+ * License page — /ko/license/ and /en/license/
+ */
+import Layout from '../../components/Layout.astro';
+import { getLang, t, getLocalizedName } from '../../i18n/utils';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'ko' } },
+    { params: { lang: 'en' } },
+  ];
+}
+
+const lang = getLang(Astro.params.lang);
+
+const appFiles = import.meta.glob('../../data/apps/*.json', { eager: true });
+const apps = Object.values(appFiles)
+  .map(m => (m as { default: unknown }).default ?? m)
+  .sort((a: any, b: any) => a.order - b.order)
+  .filter((app: any) => app.licenses && app.licenses.length > 0);
+---
+
+<Layout
+  lang={lang}
+  title={t(lang, 'license.title')}
+  description={t(lang, 'license.subtitle')}
+>
+  <section class="section license-page">
+    <div class="container">
+      <h1 class="page-title">{t(lang, 'license.title')}</h1>
+      <p class="page-subtitle">{t(lang, 'license.subtitle')}</p>
+
+      {apps.length === 0 ? (
+        <div class="glass-card empty-state">
+          <p>No license information available yet.</p>
+        </div>
+      ) : (
+        apps.map((app: any) => (
+          <div class="app-license-group">
+            <div class="app-license-header">
+              <img
+                src={app.icon}
+                alt={getLocalizedName(app.name, lang)}
+                class="app-mini-icon"
+                width="32"
+                height="32"
+                loading="lazy"
+              />
+              <h2 class="app-license-name">{getLocalizedName(app.name, lang)}</h2>
+            </div>
+
+            <div class="license-list">
+              {app.licenses.map((lic: any) => (
+                <div class="license-item glass-card">
+                  <p class="license-title">
+                    {lic.name}
+                    {lic.author && <span class="license-author"> by {lic.author}</span>}
+                  </p>
+                  {lic.licenseType && (
+                    <p class="license-type">
+                      Licensed under{' '}
+                      {lic.licenseUrl ? (
+                        <a
+                          href={lic.licenseUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="license-link"
+                        >
+                          {lic.licenseType}
+                        </a>
+                      ) : (
+                        lic.licenseType
+                      )}
+                    </p>
+                  )}
+                  {lic.source && (
+                    <a
+                      href={lic.source}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="license-source"
+                    >
+                      {lic.source}
+                    </a>
+                  )}
+                  {lic.fullText && (
+                    <pre class="license-full-text">{lic.fullText}</pre>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        ))
+      )}
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .license-page {
+    padding-bottom: var(--space-3xl);
+  }
+
+  .page-title {
+    font-size: clamp(28px, 5vw, 44px);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-sm);
+  }
+
+  .page-subtitle {
+    font-size: 16px;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-2xl);
+    line-height: 1.7;
+  }
+
+  .app-license-group {
+    margin-bottom: var(--space-2xl);
+  }
+
+  .app-license-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-md);
+  }
+
+  .app-mini-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .app-license-name {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--color-text-primary);
+  }
+
+  .license-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+
+  .license-item {
+    padding: var(--space-md) var(--space-lg);
+  }
+
+  .license-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    font-family: var(--font-sans);
+  }
+
+  .license-author {
+    font-weight: 400;
+    color: var(--color-text-secondary);
+  }
+
+  .license-type {
+    font-size: 14px;
+    color: var(--color-text-secondary);
+    margin-top: var(--space-xs);
+  }
+
+  .license-link {
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .license-source {
+    display: inline-block;
+    font-size: 13px;
+    color: var(--color-accent);
+    margin-top: var(--space-xs);
+    word-break: break-all;
+    min-height: 44px;
+    line-height: 44px;
+  }
+
+  .license-full-text {
+    margin-top: var(--space-md);
+    font-size: 12px;
+    font-family: 'SFMono-Regular', 'Consolas', monospace;
+    color: var(--color-text-secondary);
+    white-space: pre-wrap;
+    word-break: break-word;
+    background: rgba(0, 0, 0, 0.03);
+    border-radius: var(--radius-sm);
+    padding: var(--space-md);
+    max-height: 300px;
+    overflow-y: auto;
+  }
+
+  .empty-state {
+    padding: var(--space-2xl);
+    text-align: center;
+    color: var(--color-text-secondary);
+    font-size: 15px;
+  }
+</style>

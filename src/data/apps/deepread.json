@@ -1,0 +1,382 @@
+{
+  "slug": "deepread",
+  "order": 2,
+  "icon": "/icons/deepread.png",
+  "name": {
+    "default": "deepread",
+    "ko": "deepread",
+    "en": "deepread",
+    "ja": "deepread"
+  },
+  "tagline": {
+    "ko": "독서 통계와 발췌 이미지를 한 곳에",
+    "en": "Reading stats & highlight exports, all in one place"
+  },
+  "description": {
+    "ko": "책을 읽는 즐거움, 그 이상의 기록. deepread\n\n단순히 읽는 것을 넘어, 독서의 모든 과정을 데이터로 간직하고 싶나요?\ndeepread는 당신의 독서 생활을 더 깊고 풍성하게 채워주는 스마트한 파트너입니다.\n\n✨ 나만의 스마트한 서재 관리\n· 제목, 저자, ISBN 검색으로 읽고 싶은 책을 빠르게 등록하세요.\n· 읽는 중, 완독, 위시리스트, 중단(DNF) 등 상태별로 책장을 깔끔하게 관리합니다.\n\n📝 몰입을 돕는 세밀한 독서 기록\n· 읽은 페이지, 독서 시간, 그날의 메모와 무드까지 한 흐름으로 남기세요.\n· 기억하고 싶은 문장을 나만의 카드로 제작해 SNS에 감성적으로 공유할 수 있습니다.\n\n📊 한눈에 확인하는 나의 읽기 습관\n· 독서 통계와 캘린더를 통해 나의 독서 패턴을 시각적으로 확인하세요.\n· 월간/연간 리포트로 나의 독서 취향과 장르 분석 데이터를 제공합니다.\n\n🎨 취향대로 꾸미는 나만의 앱\n· 라이트/다크 모드는 기본, 앱의 포인트 컬러를 내 취향에 맞게 설정해 보세요.\n· 전 세계 사용자를 위한 다국어 지원과 안전한 로컬 백업/복원 기능을 제공합니다.\n(지원 언어 : 영어, 독일어, 포르투갈어, 프랑스어, 스페인어, 이탈리아어, 한국어, 일본어)\n\n이런 분들께 추천해요!\n· 읽은 책의 여운을 잊지 않도록 체계적으로 남기고 싶은 분\n· 내 독서 데이터를 예쁜 그래프와 통계로 보고 싶은 분\n· 책 속의 멋진 문장을 나만의 디자인으로 간직하고 싶은 분\n\n지금 바로 deepread를 시작하고, 당신만의 특별한 서재를 만들어보세요!",
+    "en": "Reading Beyond the Pages. deepread.\n\nWant to preserve every moment of your reading journey as meaningful data?\ndeepread is your smart reading companion — helping you build a deeper, richer reading life.\n\n✨ Your Smart Personal Library\n· Quickly add books by title, author, or ISBN search.\n· Organize your bookshelf by status: Reading, Finished, Wishlist, or DNF.\n\n📝 Detailed Reading Records\n· Log pages read, reading time, daily notes, and mood — all in one flow.\n· Turn your favorite quotes into beautifully designed cards to share on social media.\n\n📊 Visualize Your Reading Habits\n· Track your reading patterns with stats and a calendar view.\n· Get monthly and yearly reports with genre breakdowns and personal insights.\n\n🎨 Make It Yours\n· Choose light or dark mode, and personalize your accent color.\n· Enjoy multilingual support and secure local backup & restore.\n(Supported languages: English, German, Portuguese, French, Spanish, Italian, Korean, Japanese)\n\nPerfect for you if you...\n· Want to capture the lasting impression of every book you read\n· Love seeing your reading data as beautiful charts and statistics\n· Enjoy preserving meaningful quotes in your own unique design\n\nStart deepread today and build the personal library only you could create!"
+  },
+  "screenshots": { "ko": 9, "en": 9 },
+  "platforms": ["android"],
+  "platformsNote": {
+    "ko": "iOS 출시 예정",
+    "en": "iOS coming soon"
+  },
+  "links": {
+    "appStore": "",
+    "googlePlay": "https://play.google.com/store/apps/details?id=com.thenovary.deepread"
+  },
+  "privacy": {
+    "lastUpdated": {
+      "ko": "2026년 4월 8일",
+      "en": "April 8, 2026"
+    },
+    "sections": [
+      {
+        "title": {
+          "ko": "개요",
+          "en": "Overview"
+        },
+        "content": {
+          "ko": "DeepRead는 독서 기록 및 북 저널 앱입니다. 사용자는 도서 검색, 수동 등록 또는 바코드 스캔 등록, 독서 진행률 관리, 메모 및 리뷰 작성, 문장 저장, 독서 통계 확인, 테마와 언어 설정, 백업 및 복원, 유료 기능 이용 등을 할 수 있습니다.\nDeepRead는 회원가입을 요구하지 않으며, 사용자가 작성한 대부분의 콘텐츠는 이용자의 기기에 로컬로 저장됩니다.",
+          "en": "DeepRead is a reading log and book journal app. Users can search for books, add them manually or via barcode scan, track reading progress, write notes and reviews, save passages, view reading statistics, customize themes and language settings, back up and restore data, and access paid features.\nDeepRead does not require account registration, and most content created by users is stored locally on their device."
+        }
+      },
+      {
+        "title": {
+          "ko": "처리되는 정보",
+          "en": "Information Processed"
+        },
+        "content": {
+          "ko": "사용자가 선택한 기능에 따라 DeepRead는 기기 내에서 다음과 같은 정보를 처리할 수 있습니다.\n도서 제목, 저자, 표지, ISBN, 읽기 상태, 진행률, 평점, 태그, 메모, 문장, 리뷰, 독서 이력 등 서재 데이터\n닉네임, 프로필 이미지, 앱 외형 설정 등 프로필 데이터\n언어, 테마, 색상 선택, 구매 상태 등 독서 통계 및 앱 설정 정보\n사용자가 직접 내보내거나 불러오는 백업 파일\n앱 내 검색 성능 향상을 위한 최근 검색어 및 캐시된 검색 결과",
+          "en": "Depending on the features you choose to use, DeepRead may process the following information on your device:\nLibrary data including book titles, authors, cover images, ISBNs, reading status, progress, ratings, tags, notes, passages, reviews, and reading history\nProfile data including nickname, profile image, and app appearance settings\nReading statistics and app settings such as language, theme, color preferences, and purchase status\nBackup files exported or imported by the user\nRecent search terms and cached search results to improve in-app search performance"
+        }
+      },
+      {
+        "title": {
+          "ko": "카메라, 사진, 파일 접근",
+          "en": "Camera, Photos, and File Access"
+        },
+        "content": {
+          "ko": "DeepRead는 도서 바코드 스캔, 표지 또는 프로필 이미지 선택, 공유 카드 갤러리 저장, 백업 파일 내보내기 및 복원 등 사용자가 요청한 기능을 제공하기 위해 필요한 경우에만 카메라, 사진 보관함 또는 파일 접근 권한을 요청할 수 있습니다.\n이러한 권한을 통해 선택되거나 생성된 콘텐츠는 사용자가 직접 공유하거나 내보내지 않는 한 일반적으로 이용자의 기기에 로컬로 저장됩니다.",
+          "en": "DeepRead may request access to your camera, photo library, or file system only when necessary to provide features you have requested, such as scanning book barcodes, selecting cover or profile images, saving share cards to your gallery, or exporting and restoring backup files.\nContent selected or generated through these permissions is generally stored locally on your device unless you choose to share or export it."
+        }
+      },
+      {
+        "title": {
+          "ko": "도서 검색 및 외부 데이터",
+          "en": "Book Search and External Data"
+        },
+        "content": {
+          "ko": "사용자가 도서를 검색할 때 DeepRead는 검색 결과와 도서 메타데이터를 제공하기 위해 Google Books, Aladin 등 제3자 도서 데이터 제공업체에 검색어를 전송할 수 있습니다.\n이들 제공업체는 각자의 정책에 따라 검색어, 네트워크 정보, 기술적 요청 데이터를 처리할 수 있습니다.",
+          "en": "When you search for books, DeepRead may transmit your search queries to third-party book data providers such as Google Books and Aladin in order to return search results and book metadata.\nThese providers may process your search queries, network information, and technical request data in accordance with their own privacy policies."
+        }
+      },
+      {
+        "title": {
+          "ko": "광고 및 결제",
+          "en": "Advertising and Payments"
+        },
+        "content": {
+          "ko": "DeepRead는 앱 일부 영역에서 Google AdMob을 통해 광고를 표시할 수 있습니다. 광고 제공업체는 자체 개인정보 처리방침에 따라 기기 정보, 광고 식별자, IP 주소, 앱 상호작용 데이터 등을 자동으로 처리할 수 있습니다. 앱 내 결제를 하는 경우 결제 처리와 복원은 Apple App Store 또는 Google Play Billing을 통해 이루어집니다. DeepRead는 유료 기능 잠금 해제를 유지하기 위해 구매 상태를 기기에 로컬로 저장할 수 있습니다.",
+          "en": "DeepRead may display advertisements in certain areas of the app through Google AdMob. The advertising provider may automatically process device information, advertising identifiers, IP addresses, and app interaction data in accordance with its own privacy policy. In-app purchases are processed and restored through Apple App Store or Google Play Billing. DeepRead may store your purchase status locally on your device to maintain access to unlocked paid features."
+        }
+      },
+      {
+        "title": {
+          "ko": "데이터 저장",
+          "en": "Data Storage"
+        },
+        "content": {
+          "ko": "대부분의 앱 데이터는 이용자의 기기에 로컬로 저장됩니다. thenovary는 사용자의 독서 기록 콘텐츠를 위한 별도의 클라우드 계정 시스템이나 개발자 운영 동기화 서버를 운영하지 않습니다.\n사용자가 백업을 내보내는 경우 백업 파일은 사용자가 선택한 위치에 저장됩니다.",
+          "en": "Most app data is stored locally on your device. thenovary does not operate a cloud account system or developer-managed sync server for your reading content.\nIf you choose to export a backup, the backup file is saved to a location of your choosing."
+        }
+      },
+      {
+        "title": {
+          "ko": "데이터 공유",
+          "en": "Data Sharing"
+        },
+        "content": {
+          "ko": "thenovary는 개인정보를 판매하지 않습니다. 정보는 검색, 광고, 인앱결제, 기기 미디어 접근, 파일 접근, 공유 기능 제공에 필요한 범위에서만 제3자 제공업체에 의해 처리될 수 있습니다.",
+          "en": "thenovary does not sell your personal information. Information may be processed by third-party providers only to the extent necessary to provide search, advertising, in-app purchases, device media access, file access, and sharing features."
+        }
+      },
+      {
+        "title": {
+          "ko": "보관 기간",
+          "en": "Data Retention"
+        },
+        "content": {
+          "ko": "DeepRead의 대부분의 데이터는 로컬에 저장되므로, 사용자는 앱 내에서 콘텐츠를 수정 또는 삭제하거나, 내보낸 백업 파일을 삭제하거나, 앱을 삭제함으로써 보관 여부를 직접 관리할 수 있습니다.",
+          "en": "Since most data in DeepRead is stored locally, you are in direct control of retention. You can modify or delete content within the app, delete any exported backup files, or uninstall the app at any time."
+        }
+      },
+      {
+        "title": {
+          "ko": "아동의 개인정보",
+          "en": "Children's Privacy"
+        },
+        "content": {
+          "ko": "DeepRead는 만 13세 미만 아동을 특별히 대상으로 하지 않으며, thenovary는 개발자 운영 계정 시스템을 통해 아동의 개인정보를 고의로 수집하지 않습니다.",
+          "en": "DeepRead is not directed at children under the age of 13, and thenovary does not knowingly collect personal information from children through any developer-operated account system."
+        }
+      },
+      {
+        "title": {
+          "ko": "보안",
+          "en": "Security"
+        },
+        "content": {
+          "ko": "DeepRead는 기기 로컬 저장소와 운영체제의 보호 기능에 의존합니다. 앱의 안전한 사용을 지원하기 위해 합리적인 노력을 기울이지만, 어떠한 저장 또는 전송 방식도 완전히 안전하다고 보장할 수는 없습니다.",
+          "en": "DeepRead relies on your device's local storage and the security protections provided by your operating system. While we make reasonable efforts to support the secure use of the app, no method of storage or transmission can be guaranteed to be completely secure."
+        }
+      },
+      {
+        "title": {
+          "ko": "변경",
+          "en": "Changes to This Policy"
+        },
+        "content": {
+          "ko": "본 개인정보 처리방침은 기능 변경, 법적 요구사항, 제3자 서비스 변경에 따라 수정될 수 있습니다. 개정 시에는 본 페이지에 수정된 시행일과 함께 게시됩니다.",
+          "en": "This Privacy Policy may be updated in response to changes in features, legal requirements, or third-party services. Any revisions will be posted on this page along with the updated effective date."
+        }
+      },
+      {
+        "title": {
+          "ko": "문의",
+          "en": "Contact"
+        },
+        "content": {
+          "ko": "infodeskline@gmail.com",
+          "en": "infodeskline@gmail.com"
+        }
+      }
+    ]
+  },
+  "terms": {
+    "lastUpdated": {
+      "ko": "2026년 4월 8일",
+      "en": "April 8, 2026"
+    },
+    "sections": [
+      {
+        "title": {
+          "ko": "약관 동의",
+          "en": "Acceptance of Terms"
+        },
+        "content": {
+          "ko": "사용자는 DeepRead를 다운로드, 설치, 접속 또는 이용함으로써 본 약관에 동의한 것으로 봅니다. 약관에 동의하지 않으면 서비스를 이용할 수 없습니다.",
+          "en": "By downloading, installing, accessing, or using DeepRead, you are deemed to have agreed to these Terms. If you do not agree to the Terms, you may not use the service."
+        }
+      },
+      {
+        "title": {
+          "ko": "서비스 개요",
+          "en": "Service Overview"
+        },
+        "content": {
+          "ko": "DeepRead는 개인 서재 관리와 독서 기록을 돕는 앱으로, 도서 검색, 수동 등록 및 바코드 등록, 독서 진행률 및 세션 기록, 메모·문장·리뷰 작성, 통계 및 리포트 확인, 테마와 언어 설정, 이미지 저장·공유, 백업·복원, 선택적 유료 기능 이용 등을 제공합니다.\n현재 DeepRead는 별도의 회원가입을 요구하지 않으며, 사용자가 작성한 대부분의 콘텐츠는 이용자의 기기에 로컬로 저장됩니다.",
+          "en": "DeepRead is an app designed to help you manage your personal library and track your reading. It provides features including book search, manual and barcode registration, reading progress and session tracking, note-taking, passage saving, review writing, statistics and report viewing, theme and language customization, image saving and sharing, backup and restore, and optional paid features.\nDeepRead currently does not require a separate account registration, and most content created by users is stored locally on their device."
+        }
+      },
+      {
+        "title": {
+          "ko": "앱 이용권",
+          "en": "License to Use the App"
+        },
+        "content": {
+          "ko": "운영자는 사용자에게 개인적이고 비상업적인 목적 범위에서, 사용자가 적법하게 보유한 기기에서 DeepRead를 사용할 수 있는 제한적이고 비독점적이며 양도 불가능하고 철회 가능한 이용권을 부여합니다.",
+          "en": "The operator grants you a limited, non-exclusive, non-transferable, and revocable license to use DeepRead on devices you lawfully own or control, solely for personal and non-commercial purposes."
+        }
+      },
+      {
+        "title": {
+          "ko": "사용자 콘텐츠와 로컬 저장",
+          "en": "User Content and Local Storage"
+        },
+        "content": {
+          "ko": "사용자는 DeepRead를 통해 생성, 등록, 복원, 가져오기, 내보내기 또는 공유하는 도서 정보, 메모, 문장, 리뷰, 프로필 정보, 이미지, 백업 파일 등 자신의 콘텐츠에 대해 책임을 집니다.\n서비스 데이터의 대부분이 로컬 저장되는 구조이므로, 사용자는 기기 보안, 데이터 이전, 백업 파일 보관, 외부 공유 전 내용 확인에 대해 스스로 책임을 부담합니다. 현재 운영자는 독서 기록 콘텐츠를 위한 개발자 운영형 클라우드 동기화 서비스를 제공하지 않습니다.",
+          "en": "You are responsible for any content you create, register, restore, import, export, or share through DeepRead, including book information, notes, passages, reviews, profile information, images, and backup files.\nBecause most service data is stored locally, you bear sole responsibility for device security, data migration, backup file management, and reviewing content before sharing it externally. The operator currently does not provide a developer-managed cloud sync service for reading content."
+        }
+      },
+      {
+        "title": {
+          "ko": "금지행위",
+          "en": "Prohibited Activities"
+        },
+        "content": {
+          "ko": "사용자는 서비스의 정상적인 운영을 방해하는 행위, 무단 접근 시도, 유료 기능 또는 광고 기반 흐름의 우회, 관련 법령이 허용하는 범위를 넘는 역분석, 타인의 권리 침해, 기타 법령 또는 공서양속에 반하는 행위를 하여서는 안 됩니다.",
+          "en": "You may not interfere with the normal operation of the service, attempt unauthorized access, circumvent paid features or ad-based flows, reverse engineer the app beyond what is permitted by applicable law, infringe on the rights of others, or engage in any conduct that violates applicable laws or public order and morals."
+        }
+      },
+      {
+        "title": {
+          "ko": "제3자 서비스와 외부 데이터",
+          "en": "Third-Party Services and External Data"
+        },
+        "content": {
+          "ko": "DeepRead는 Google Books, Aladin, Google AdMob, Apple App Store, Google Play Billing 등 제3자 서비스 또는 데이터를 사용할 수 있습니다. 도서 검색 결과, 메타데이터, 광고, 결제 및 복원 기능은 해당 제공자의 정책과 운영 상황에 영향을 받을 수 있습니다.\n운영자는 제3자 서비스로부터 제공되는 도서 정보(검색 결과, 이미지, 상세 정보 등)의 정확성, 완전성, 최신성 또는 지속적 제공 가능성에 대해 어떠한 보증도 하지 않으며, 이에 따른 책임을 지지 않습니다.",
+          "en": "DeepRead may use third-party services or data, including Google Books, Aladin, Google AdMob, Apple App Store, and Google Play Billing. Book search results, metadata, advertisements, and payment and restore functionality may be affected by the policies and operational status of the respective providers.\nThe operator makes no warranties and accepts no liability regarding the accuracy, completeness, currency, or continued availability of book information (including search results, images, and details) provided by third-party services."
+        }
+      },
+      {
+        "title": {
+          "ko": "유료 기능, 후원형 결제, 환불",
+          "en": "Paid Features, Support Purchases, and Refunds"
+        },
+        "content": {
+          "ko": "DeepRead는 광고 제거, 컬러 팔레트 해제, 프리미엄 패키지, 후원형 상품 등 선택적 유료 기능을 제공할 수 있습니다. 유료 기능의 구체적인 범위와 가격은 구매 시점의 앱 내 안내를 기준으로 합니다.\n결제, 청구, 구매 복원, 취소, 환불은 관련 법령과 앱 마켓 또는 플랫폼 사업자의 정책에 따라 처리됩니다. 미성년자는 법정대리인의 동의를 받은 뒤 유료서비스를 이용해야 합니다.\n후원형 상품은 개발자 지원을 위한 자발적 소비성 결제이며, 별도의 물품 제공이나 개별 맞춤형 서비스 제공 의무를 발생시키지 않습니다.",
+          "en": "DeepRead may offer optional paid features such as ad removal, color palette unlocks, premium packages, and support purchases. The specific scope and pricing of paid features are governed by the in-app information available at the time of purchase.\nPayment, billing, purchase restoration, cancellation, and refunds are handled in accordance with applicable law and the policies of the relevant app marketplace or platform operator. Minors must obtain consent from their legal guardian before using paid features.\nSupport purchases are voluntary consumable payments intended to support the developer and do not create any obligation to provide physical goods or individualized services."
+        }
+      },
+      {
+        "title": {
+          "ko": "광고 및 광고 기반 기능",
+          "en": "Advertising and Ad-Based Features"
+        },
+        "content": {
+          "ko": "무료 버전의 DeepRead에는 배너, 네이티브, 전면, 보상형 등 형태의 광고가 포함될 수 있습니다. 일부 무료 기능, 특히 특정 이미지 공유 또는 생성 기능은 광고 시청 후 제공될 수 있으며, 광고의 종류와 노출 방식은 변경될 수 있습니다.",
+          "en": "The free version of DeepRead may include advertisements in formats such as banner, native, interstitial, and rewarded ads. Certain free features, particularly some image sharing or generation features, may be made available after watching an ad. The types and display methods of advertisements are subject to change."
+        }
+      },
+      {
+        "title": {
+          "ko": "백업, 공유, 내보내기",
+          "en": "Backup, Sharing, and Export"
+        },
+        "content": {
+          "ko": "DeepRead는 백업 파일 내보내기, 이미지 카드 또는 리포트 생성 및 저장·공유 기능을 제공할 수 있습니다. 사용자는 외부로 공유하기 전 내보낸 콘텐츠를 직접 확인해야 하며, 백업 파일의 보관 및 관리 책임은 사용자에게 있습니다.\n백업 파일의 복원 가능 여부는 앱 버전, 기기 환경, 파일 상태에 따라 달라질 수 있습니다.",
+          "en": "DeepRead may provide features for exporting backup files, generating image cards or reports, and saving or sharing them. You are responsible for reviewing exported content before sharing it externally, and for storing and managing your backup files.\nWhether a backup file can be successfully restored may vary depending on the app version, device environment, and the condition of the file."
+        }
+      },
+      {
+        "title": {
+          "ko": "지식재산권",
+          "en": "Intellectual Property"
+        },
+        "content": {
+          "ko": "DeepRead 자체와 그 안의 디자인, 구성, 소프트웨어, 운영 관련 권리는 사용자의 콘텐츠 및 별도 라이선스가 적용되는 제3자 자료를 제외하고 운영자 또는 권리자에게 귀속됩니다. 본 약관은 사용자에게 서비스 소유권을 이전하지 않습니다.",
+          "en": "DeepRead and all associated designs, compositions, software, and operational rights belong to the operator or the respective rights holders, except for user content and third-party materials subject to separate licenses. These Terms do not transfer any ownership of the service to you."
+        }
+      },
+      {
+        "title": {
+          "ko": "라이선스 및 고지",
+          "en": "Licenses and Notices"
+        },
+        "content": {
+          "ko": "DeepRead 및 다른 thenovary 앱에 사용된 제3자 오픈소스 라이선스와 고지 사항은 Licenses 페이지에서 확인할 수 있습니다.",
+          "en": "Third-party open-source licenses and notices used in DeepRead and other thenovary apps can be found on the Licenses page."
+        }
+      },
+      {
+        "title": {
+          "ko": "서비스 변경 및 중단",
+          "en": "Service Modifications and Discontinuation"
+        },
+        "content": {
+          "ko": "운영자는 서비스 운영, 품질 개선, 보안 대응, 법령 준수 등을 위해 DeepRead의 기능, 디자인, 지원 플랫폼, 유료 기능 구성, 광고 구성의 전부 또는 일부를 수정, 추가, 제한, 중단할 수 있습니다.",
+          "en": "The operator may modify, add, restrict, or discontinue all or part of DeepRead's features, design, supported platforms, paid feature lineup, or advertising configuration as necessary for service operation, quality improvement, security, or legal compliance."
+        }
+      },
+      {
+        "title": {
+          "ko": "면책 및 책임 제한",
+          "en": "Disclaimer and Limitation of Liability"
+        },
+        "content": {
+          "ko": "DeepRead는 법령상 허용되는 범위에서 \"있는 그대로\" 및 \"제공 가능한 상태로\" 제공됩니다. 운영자는 서비스가 항상 중단 없이 제공되거나 오류가 전혀 없음을 보장하지 않습니다.\n운영자는 제3자 데이터 제공자의 오류, 앱 마켓 정책 변경, 이용자 기기 고장, 운영체제 제한, 로컬 저장 데이터의 손실 등으로 발생한 손해에 대해 운영자의 고의 또는 중대한 과실이 없는 한 책임을 지지 않습니다.",
+          "en": "DeepRead is provided \"as is\" and \"as available\" to the extent permitted by applicable law. The operator does not warrant that the service will always be available without interruption or entirely free of errors.\nThe operator shall not be liable for damages arising from errors by third-party data providers, changes to app marketplace policies, device failures, operating system limitations, or loss of locally stored data, except where caused by the operator's willful misconduct or gross negligence."
+        }
+      },
+      {
+        "title": {
+          "ko": "이용 종료",
+          "en": "Termination of Use"
+        },
+        "content": {
+          "ko": "사용자는 언제든지 앱을 삭제함으로써 서비스 이용을 중단할 수 있습니다. 운영자는 서비스 보호, 보안 위험 대응, 법령 준수, 부정 이용 방지를 위해 필요한 경우 서비스의 전부 또는 일부를 제한 또는 종료할 수 있습니다.",
+          "en": "You may stop using the service at any time by uninstalling the app. The operator may restrict or terminate all or part of the service as necessary to protect the service, respond to security risks, comply with applicable law, or prevent misuse."
+        }
+      },
+      {
+        "title": {
+          "ko": "약관 변경",
+          "en": "Changes to These Terms"
+        },
+        "content": {
+          "ko": "운영자는 서비스 내용 또는 관련 법령의 변경에 따라 본 약관을 개정할 수 있습니다. 중요한 변경이 있는 경우 개정 약관과 시행일을 본 페이지에 게시합니다.",
+          "en": "The operator may revise these Terms in response to changes in the service or applicable law. In the event of material changes, the revised Terms and their effective date will be posted on this page."
+        }
+      },
+      {
+        "title": {
+          "ko": "준거법 및 분쟁",
+          "en": "Governing Law and Disputes"
+        },
+        "content": {
+          "ko": "본 약관은 대한민국 법령에 따라 해석됩니다. 소비자 보호에 관한 강행규정이나 앱 마켓 거래에 적용되는 규정이 있는 경우 해당 규정이 함께 적용될 수 있으며, 분쟁은 관계 법령에 따라 처리됩니다.",
+          "en": "These Terms shall be interpreted in accordance with the laws of the Republic of Korea. Where mandatory consumer protection provisions or regulations applicable to app marketplace transactions exist, such provisions shall also apply, and disputes shall be resolved in accordance with applicable law."
+        }
+      },
+      {
+        "title": {
+          "ko": "문의",
+          "en": "Contact"
+        },
+        "content": {
+          "ko": "infodeskline@gmail.com",
+          "en": "infodeskline@gmail.com"
+        }
+      }
+    ]
+  },
+  "support": {
+    "email": "infodeskline@gmail.com",
+    "sections": [
+      {
+        "title": {
+          "ko": "자주 묻는 질문",
+          "en": "Frequently Asked Questions"
+        },
+        "content": {
+          "ko": "deepread 사용 중 문제가 발생하거나 궁금한 점이 있으시면 아래 이메일로 문의해 주세요. 최대한 빠르게 답변 드리겠습니다.",
+          "en": "If you experience any issues or have questions while using deepread, please contact us via email below. We'll get back to you as soon as possible."
+        }
+      },
+      {
+        "title": {
+          "ko": "데이터 관련 문제",
+          "en": "Data-related Issues"
+        },
+        "content": {
+          "ko": "앱을 재설치하면 기기에 저장된 데이터가 삭제될 수 있습니다. 데이터 복구는 지원되지 않으므로 중요한 기록은 미리 백업해 두시기 바랍니다.",
+          "en": "Reinstalling the app may delete data stored on your device. Data recovery is not supported, so please back up important records in advance."
+        }
+      },
+      {
+        "title": {
+          "ko": "버그 신고",
+          "en": "Bug Reports"
+        },
+        "content": {
+          "ko": "버그 발견 시 기기 모델, OS 버전, 앱 버전과 함께 문의 이메일로 신고해 주시면 빠른 수정에 도움이 됩니다.",
+          "en": "If you find a bug, please report it to our support email along with your device model, OS version, and app version. This helps us fix issues faster."
+        }
+      }
+    ]
+  },
+  "licenses": [
+    {
+      "name": "Design Template",
+      "author": "Arzu Cetinkaya",
+      "licenseType": "CC BY 4.0"
+    },
+    {
+      "name": "Emoji Graphics",
+      "author": "Twitter, Inc and other contributors",
+      "licenseType": "CC BY 4.0"
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+---
+/**
+ * App Support page
+ * Route: /[lang]/apps/[slug]/support/
+ */
+import Layout from '../../../../components/Layout.astro';
+import AppSubNav from '../../../../components/AppSubNav.astro';
+import { getLang, t, getLocalizedName } from '../../../../i18n/utils';
+
+export async function getStaticPaths() {
+  const langs = ['ko', 'en'];
+  const appFiles = import.meta.glob('../../../../data/apps/*.json', { eager: true });
+  const apps = Object.values(appFiles).map((m: any) => m.default ?? m);
+  return langs.flatMap(lang =>
+    apps.map((app: any) => ({ params: { lang, slug: app.slug }, props: { app } }))
+  );
+}
+
+const { app } = Astro.props;
+const lang = getLang(Astro.params.lang);
+const localizedName = getLocalizedName(app.name, lang);
+
+const email = app.support?.email ?? 'infodeskline@gmail.com';
+const sections = app.support?.sections ?? [];
+---
+
+<Layout
+  lang={lang}
+  title={`${t(lang, 'appNav.support')} — ${localizedName}`}
+  description={`${localizedName} ${t(lang, 'appNav.support')}`}
+>
+  <section class="section support-page">
+    <div class="container">
+
+      <a href={`/${lang}/`} class="back-link">← {t(lang, 'app.backToHome')}</a>
+
+      <div class="page-header">
+        <img src={app.icon} alt={localizedName} class="app-icon" width="48" height="48" />
+        <div>
+          <p class="app-name-label">{localizedName}</p>
+          <h1 class="page-title">{t(lang, 'appNav.support')}</h1>
+        </div>
+      </div>
+
+      <AppSubNav lang={lang} slug={app.slug} active="support" />
+
+      <!-- Email contact card -->
+      <div class="contact-card glass-card">
+        <div class="contact-info">
+          <p class="contact-label">{t(lang, 'appPage.supportEmail')}</p>
+          <a href={`mailto:${email}`} class="contact-email">{email}</a>
+        </div>
+        <a href={`mailto:${email}`} class="btn btn-primary">
+          {t(lang, 'appPage.sendEmail')}
+        </a>
+      </div>
+
+      <!-- Support sections (FAQ, etc.) -->
+      {sections.length > 0 && (
+        <div class="support-sections">
+          {sections.map((section: any) => (
+            <div class="support-section glass-card">
+              <h2 class="section-title">
+                {section.title?.[lang] ?? section.title?.['en'] ?? ''}
+              </h2>
+              <p class="section-content">
+                {section.content?.[lang] ?? section.content?.['en'] ?? ''}
+              </p>
+            </div>
+          ))}
+        </div>
+      )}
+
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .support-page {
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-3xl);
+  }
+
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--color-accent);
+    margin-bottom: var(--space-md);
+    min-height: 44px;
+    transition: color var(--duration-fast) var(--ease-smooth);
+  }
+  .back-link:hover { color: var(--color-accent-hover); }
+
+  .page-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+  }
+
+  .app-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-sm);
+    flex-shrink: 0;
+  }
+
+  .app-name-label {
+    font-size: 13px;
+    color: #1d1d1f;
+    margin-bottom: 2px;
+  }
+
+  .page-title {
+    font-size: clamp(22px, 4vw, 32px);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: var(--color-text-primary);
+  }
+
+  .contact-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-lg);
+    padding: var(--space-lg) var(--space-xl);
+    margin-bottom: var(--space-lg);
+    flex-wrap: wrap;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .contact-label {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-text-tertiary);
+  }
+
+  .contact-email {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-accent);
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    transition: color var(--duration-fast) var(--ease-smooth);
+  }
+  .contact-email:hover { color: var(--color-accent-hover); }
+
+  .support-sections {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+
+  .support-section {
+    padding: var(--space-lg) var(--space-xl);
+  }
+
+  .section-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-sm);
+  }
+
+  .section-content {
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--color-text-secondary);
+  }
+
+  @media (max-width: 480px) {
+    .contact-card { flex-direction: column; align-items: flex-start; }
+    .contact-card .btn { width: 100%; justify-content: center; }
+  }
+</style>

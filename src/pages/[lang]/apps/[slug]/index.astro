@@ -1,0 +1,366 @@
+---
+/**
+ * App detail — 앱 소개 탭
+ * Route: /[lang]/apps/[slug]/
+ */
+import Layout from '../../../../components/Layout.astro';
+import AppSubNav from '../../../../components/AppSubNav.astro';
+import { getLang, t, getLocalizedName } from '../../../../i18n/utils';
+
+export async function getStaticPaths() {
+  const langs = ['ko', 'en'];
+  const appFiles = import.meta.glob('../../../../data/apps/*.json', { eager: true });
+  const apps = Object.values(appFiles).map((m: any) => m.default ?? m);
+  return langs.flatMap(lang =>
+    apps.map((app: any) => ({ params: { lang, slug: app.slug }, props: { app } }))
+  );
+}
+
+const { app } = Astro.props;
+const lang = getLang(Astro.params.lang);
+
+const localizedName = getLocalizedName(app.name, lang);
+const description = app.description?.[lang] ?? app.description?.['en'] ?? '';
+const tagline = app.tagline?.[lang] ?? app.tagline?.['en'] ?? '';
+const platformsNote = app.platformsNote?.[lang] ?? app.platformsNote?.['en'] ?? '';
+const status = app.status?.[lang] ?? app.status?.['en'] ?? '';
+
+const platformLabels: Record<string, string> = {
+  ios: 'iOS',
+  android: 'Android',
+};
+
+const screenshotCount = app.screenshots?.[lang] ?? app.screenshots?.['ko'] ?? 0;
+const screenshots = Array.from({ length: screenshotCount }, (_, i) => `/${app.slug}/${lang}/${i + 1}.png`);
+---
+
+<Layout lang={lang} title={localizedName} description={tagline}>
+  <section class="section app-detail">
+    <div class="container">
+
+      <!-- Back link -->
+      <a href={`/${lang}/`} class="back-link">← {t(lang, 'app.backToHome')}</a>
+
+      <!-- App header -->
+      <div class="app-header glass-card">
+        <div class="app-icon-wrap">
+          <img src={app.icon} alt={`${localizedName} icon`} width="96" height="96" loading="eager" />
+        </div>
+        <div class="app-header-text">
+          <div class="app-name-row">
+            <h1 class="app-name">{localizedName}</h1>
+            {status && <span class="status-badge">{status}</span>}
+          </div>
+          <p class="app-tagline">{tagline}</p>
+          {app.platforms?.length > 0 && (
+            <p class="app-platforms">
+              {t(lang, 'app.platform')}:&nbsp;
+              {app.platforms.map((p: string) => platformLabels[p] ?? p).join(' / ')}
+              {platformsNote && <span class="platforms-note"> · {platformsNote}</span>}
+            </p>
+          )}
+          <p class="app-developer">
+            {t(lang, 'appPage.developer')}: <span>thenovary</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Download buttons -->
+      <div class="download-row">
+        {app.links?.appStore ? (
+          <a href={app.links.appStore} class="btn btn-primary download-btn" target="_blank" rel="noopener noreferrer">
+            <span class="download-label">{t(lang, 'app.downloadOn')}</span>
+            <span class="download-store">{t(lang, 'app.appStore')}</span>
+          </a>
+        ) : (
+          <span class="btn download-btn btn-disabled">
+            <span class="download-label">{lang === 'ko' ? '출시 예정' : 'Coming Soon'}</span>
+            <span class="download-store">{t(lang, 'app.appStore')}</span>
+          </span>
+        )}
+        {app.links?.googlePlay ? (
+          <a href={app.links.googlePlay} class="btn btn-secondary download-btn" target="_blank" rel="noopener noreferrer">
+            <span class="download-label">{t(lang, 'app.downloadOn')}</span>
+            <span class="download-store">{t(lang, 'app.googlePlay')}</span>
+          </a>
+        ) : (
+          <span class="btn download-btn btn-disabled">
+            <span class="download-label">{lang === 'ko' ? '출시 예정' : 'Coming Soon'}</span>
+            <span class="download-store">{t(lang, 'app.googlePlay')}</span>
+          </span>
+        )}
+      </div>
+
+      <!-- Sub navigation -->
+      <AppSubNav lang={lang} slug={app.slug} active="intro" />
+
+      <!-- Screenshots carousel -->
+      {screenshots.length > 0 && (
+        <div class="screenshots-section">
+          <button class="carousel-btn carousel-btn-prev" aria-label="Previous screenshot">&#8249;</button>
+          <div class="screenshots-clip">
+            <div class="screenshots-track" id="screenshots-track">
+              {screenshots.map((src, i) => (
+                <div class="screenshot-item">
+                  <img
+                    src={src}
+                    alt={`${localizedName} screenshot ${i + 1}`}
+                    loading={i === 0 ? 'eager' : 'lazy'}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+          <button class="carousel-btn carousel-btn-next" aria-label="Next screenshot">&#8250;</button>
+        </div>
+      )}
+
+      <!-- Description -->
+      {description && (
+        <div class="app-description glass-card">
+          <p>{description}</p>
+        </div>
+      )}
+
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .app-detail {
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-3xl);
+  }
+
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--color-accent);
+    margin-bottom: var(--space-md);
+    min-height: 44px;
+    transition: color var(--duration-fast) var(--ease-smooth);
+  }
+  .back-link:hover { color: var(--color-accent-hover); }
+
+  .app-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-md) var(--space-lg);
+    margin-bottom: var(--space-lg);
+  }
+
+  .app-icon-wrap {
+    flex-shrink: 0;
+    width: 77px;
+    height: 77px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.04);
+    box-shadow: var(--shadow-md);
+  }
+  .app-icon-wrap img { width: 100%; height: 100%; object-fit: cover; }
+
+  .app-header-text { flex: 1; min-width: 0; }
+
+  .app-name-row {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    flex-wrap: wrap;
+  }
+
+  .app-name {
+    font-size: clamp(19px, 3.2vw, 29px);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: var(--color-text-primary);
+  }
+
+  .status-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 8px;
+    border-radius: var(--radius-pill);
+    font-size: 10px;
+    font-weight: 600;
+    background: rgba(91, 92, 255, 0.12);
+    color: var(--color-accent);
+    white-space: nowrap;
+  }
+
+  .app-tagline {
+    font-size: 13px;
+    color: var(--color-text-secondary);
+    margin-top: var(--space-xs);
+  }
+
+  .app-platforms {
+    font-size: 10px;
+    color: var(--color-text-tertiary);
+    margin-top: var(--space-xs);
+  }
+
+  .platforms-note { color: var(--color-accent); font-style: italic; }
+
+  .app-developer {
+    font-size: 10px;
+    color: var(--color-text-tertiary);
+    margin-top: 3px;
+  }
+  .app-developer span { color: var(--color-text-secondary); font-weight: 500; }
+
+  .download-row {
+    display: flex;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+    margin-bottom: var(--space-lg);
+  }
+
+  .download-btn {
+    flex: 1;
+    min-width: 112px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    padding: 7px 14px;
+  }
+
+  .download-label {
+    font-size: 8px;
+    font-weight: 400;
+    opacity: 0.8;
+  }
+
+  .download-store {
+    font-size: 11px;
+    font-weight: 700;
+  }
+
+  .btn-disabled {
+    opacity: 0.45;
+    cursor: default;
+    pointer-events: none;
+  }
+
+  /* ---- Screenshots ---- */
+  .screenshots-section {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: var(--space-lg);
+  }
+
+  .screenshots-clip {
+    flex: 1;
+    overflow: hidden;
+  }
+
+  .screenshots-track {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding: 8px 0 16px;
+  }
+  .screenshots-track::-webkit-scrollbar { display: none; }
+
+  .screenshot-item {
+    flex-shrink: 0;
+    /* width는 JS에서 계산 */
+    scroll-snap-align: start;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    background: #f0f0f0;
+  }
+
+  .screenshot-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* 캐러셀 버튼 */
+  .carousel-btn {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    border: none;
+    font-size: 22px;
+    line-height: 1;
+    color: var(--color-text-primary);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s, background 0.2s;
+    align-self: center;
+  }
+  .carousel-btn:hover { background: #fff; box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+  .carousel-btn.hidden { opacity: 0; pointer-events: none; }
+
+  .app-description {
+    padding: var(--space-md) var(--space-lg);
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--color-text-secondary);
+    white-space: pre-line;
+  }
+
+  @media (max-width: 480px) {
+    .app-header { flex-direction: column; text-align: center; padding: var(--space-lg); }
+    .download-row { flex-direction: column; }
+  }
+</style>
+
+<script>
+  const clip  = document.querySelector('.screenshots-clip') as HTMLElement | null;
+  const track = document.getElementById('screenshots-track') as HTMLElement | null;
+  const btnPrev = document.querySelector('.carousel-btn-prev') as HTMLButtonElement | null;
+  const btnNext = document.querySelector('.carousel-btn-next') as HTMLButtonElement | null;
+
+  if (clip && track && btnPrev && btnNext) {
+    const GAP = 12;
+    const isMobile = () => window.innerWidth <= 640;
+
+    const setItemWidths = () => {
+      const items = track.querySelectorAll('.screenshot-item') as NodeListOf<HTMLElement>;
+      const count = isMobile() ? 1 : 3;
+      const clipW = clip.clientWidth;
+      const itemWidth = count === 1 ? clipW : (clipW - GAP * (count - 1)) / count;
+      items.forEach(item => { item.style.width = itemWidth + 'px'; });
+    };
+
+    const getScrollAmount = () => {
+      const item = track.querySelector('.screenshot-item') as HTMLElement | null;
+      if (!item) return 300;
+      const count = isMobile() ? 1 : 3;
+      return (item.offsetWidth + GAP) * count;
+    };
+
+    const updateButtons = () => {
+      const { scrollLeft, scrollWidth, clientWidth } = track;
+      btnPrev.classList.toggle('hidden', scrollLeft <= 4);
+      btnNext.classList.toggle('hidden', scrollLeft + clientWidth >= scrollWidth - 4);
+    };
+
+    btnPrev.addEventListener('click', () => track.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' }));
+    btnNext.addEventListener('click', () => track.scrollBy({ left:  getScrollAmount(), behavior: 'smooth' }));
+    track.addEventListener('scroll', updateButtons, { passive: true });
+
+    setItemWidths();
+    updateButtons();
+
+    new ResizeObserver(() => { setItemWidths(); updateButtons(); }).observe(clip);
+  }
+</script>

@@ -1,0 +1,50 @@
+{
+  "nav": {
+    "apps": "Apps",
+    "license": "License",
+    "contact": "Contact"
+  },
+  "home": {
+    "eyebrow": "The Clearest Start",
+    "headline1": "Pure Innovation,",
+    "headline2": "Pure Experience.",
+    "subtitle": "thenovary is a brand studio that explores new values and gives them shape through apps. Beyond standalone features, we redefine your digital life as one cohesive, evolving brand.",
+    "ctaPrimary": "Explore Apps",
+    "ctaSecondary": "Contact Us",
+    "appsTitle": "Apps",
+    "viewDetails": "View Details"
+  },
+  "app": {
+    "platform": "Platform",
+    "downloadOn": "Download on",
+    "appStore": "App Store",
+    "googlePlay": "Google Play",
+    "backToHome": "Back to Home"
+  },
+  "appNav": {
+    "intro": "Overview",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "support": "Support",
+    "license": "License"
+  },
+  "appPage": {
+    "lastUpdated": "Last updated:",
+    "developer": "Developer",
+    "supportEmail": "Support Email",
+    "sendEmail": "Send Email"
+  },
+  "license": {
+    "title": "License",
+    "subtitle": "A list of open-source libraries and assets used in thenovary apps."
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Feel free to reach out anytime.",
+    "emailLabel": "Email",
+    "emailButton": "Send Email"
+  },
+  "footer": {
+    "copyright": "© 2026 thenovary. All rights reserved."
+  }
+}

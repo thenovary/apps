@@ -1,0 +1,203 @@
+---
+/**
+ * App Terms of Service page
+ * Route: /[lang]/apps/[slug]/terms/
+ */
+import Layout from '../../../../components/Layout.astro';
+import AppSubNav from '../../../../components/AppSubNav.astro';
+import { getLang, t, getLocalizedName } from '../../../../i18n/utils';
+
+export async function getStaticPaths() {
+  const langs = ['ko', 'en'];
+  const appFiles = import.meta.glob('../../../../data/apps/*.json', { eager: true });
+  const apps = Object.values(appFiles).map((m: any) => m.default ?? m);
+  return langs.flatMap(lang =>
+    apps.map((app: any) => ({ params: { lang, slug: app.slug }, props: { app } }))
+  );
+}
+
+const { app } = Astro.props;
+const lang = getLang(Astro.params.lang);
+const localizedName = getLocalizedName(app.name, lang);
+
+const lastUpdated = app.terms?.lastUpdated?.[lang] ?? app.terms?.lastUpdated?.['ko'] ?? '';
+const sections = app.terms?.sections ?? [];
+---
+
+<Layout
+  lang={lang}
+  title={`${t(lang, 'appNav.terms')} — ${localizedName}`}
+  description={`${localizedName} ${t(lang, 'appNav.terms')}`}
+>
+  <section class="section legal-page">
+    <div class="container">
+
+      <a href={`/${lang}/`} class="back-link">← {t(lang, 'app.backToHome')}</a>
+
+      <div class="page-header">
+        <img src={app.icon} alt={localizedName} class="app-icon" width="48" height="48" />
+        <div>
+          <p class="app-name-label">{localizedName}</p>
+          <h1 class="page-title">{t(lang, 'appNav.terms')}</h1>
+        </div>
+      </div>
+
+      <AppSubNav lang={lang} slug={app.slug} active="terms" />
+
+      <!-- Legal language notice -->
+      <div class="legal-notice">
+        <p class="legal-notice-en">This document is written in Korean for legal clarity. Please use your browser's translation feature for other languages.</p>
+        <p class="legal-notice-ko">법적 명확성을 위해 한국어로 작성되었습니다. 타 언어는 브라우저 번역 기능을 이용해 주세요.</p>
+      </div>
+
+      {lastUpdated && (
+        <p class="last-updated">{t(lang, 'appPage.lastUpdated')} {lastUpdated}</p>
+      )}
+
+      {sections.length === 0 ? (
+        <div class="glass-card empty-state">
+          <p>{lang === 'ko' ? '내용을 준비 중입니다.' : 'Content coming soon.'}</p>
+        </div>
+      ) : (
+        <div class="legal-sections">
+          {sections.map((section: any, i: number) => (
+            <div class="legal-section glass-card">
+              <h2 class="section-title">
+                <span class="section-num">{i + 1}</span>
+                {section.title?.[lang] ?? section.title?.['ko'] ?? ''}
+              </h2>
+              <p class="section-content">
+                {section.content?.[lang] ?? section.content?.['ko'] ?? ''}
+              </p>
+            </div>
+          ))}
+        </div>
+      )}
+
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .legal-page {
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-3xl);
+  }
+
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--color-accent);
+    margin-bottom: var(--space-md);
+    min-height: 44px;
+    transition: color var(--duration-fast) var(--ease-smooth);
+  }
+  .back-link:hover { color: var(--color-accent-hover); }
+
+  .page-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+  }
+
+  .app-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-sm);
+    flex-shrink: 0;
+  }
+
+  .app-name-label {
+    font-size: 13px;
+    color: #1d1d1f;
+    margin-bottom: 2px;
+  }
+
+  .page-title {
+    font-size: clamp(22px, 4vw, 32px);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: var(--color-text-primary);
+  }
+
+  .legal-notice {
+    background: rgba(91, 92, 255, 0.06);
+    border: 1px solid rgba(91, 92, 255, 0.15);
+    border-radius: var(--radius-md);
+    padding: var(--space-md) var(--space-lg);
+    margin-bottom: var(--space-lg);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .legal-notice-en {
+    font-size: 13px;
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+  }
+
+  .legal-notice-ko {
+    font-size: 12px;
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+  }
+
+  .last-updated {
+    font-size: 13px;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-lg);
+  }
+
+  .legal-sections {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+
+  .legal-section {
+    padding: var(--space-lg) var(--space-xl);
+  }
+
+  .section-title {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-sm);
+  }
+
+  .section-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: rgba(91, 92, 255, 0.12);
+    color: var(--color-accent);
+    font-size: 12px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .section-content {
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--color-text-secondary);
+    white-space: pre-line;
+  }
+
+  .empty-state {
+    padding: var(--space-2xl);
+    text-align: center;
+    color: var(--color-text-secondary);
+    font-size: 15px;
+  }
+</style>

@@ -1,0 +1,151 @@
+---
+/**
+ * Layout — Root layout component
+ * Wraps every page with:
+ *   - <head> (meta, OG, favicon, fonts)
+ *   - GNB
+ *   - Aurora background
+ *   - Footer
+ */
+import GNB from './GNB.astro';
+import Footer from './Footer.astro';
+import type { Lang } from '../i18n/utils';
+import '../styles/global.css';
+
+interface Props {
+  lang: Lang;
+  title?: string;
+  description?: string;
+  ogImage?: string;
+  canonicalURL?: string;
+}
+
+const {
+  lang,
+  title = 'thenovary',
+  description = lang === 'ko'
+    ? '혁신적인 앱을 만드는 스튜디오 thenovary'
+    : 'thenovary — A studio that crafts innovative apps',
+  ogImage = '/og-image.png',
+  canonicalURL = Astro.url.href,
+} = Astro.props;
+
+const pageTitle = title === 'thenovary' ? title : `${title} — thenovary`;
+const currentPath = Astro.url.pathname;
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={new URL(ogImage, Astro.site).href} />
+    <meta property="og:locale" content={lang === 'ko' ? 'ko_KR' : 'en_US'} />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={new URL(ogImage, Astro.site).href} />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- Theme -->
+    <meta name="color-scheme" content="light" />
+    <meta name="theme-color" content="#f5f5f7" />
+  </head>
+
+  <body>
+    <!-- Aurora background layer (CSS only, no images) -->
+    <div class="aurora-bg" aria-hidden="true">
+      <div class="aurora-cyan"></div>
+    </div>
+
+    <!-- Global Navigation Bar -->
+    <GNB lang={lang} currentPath={currentPath} />
+
+    <!-- Page content -->
+    <main>
+      <div class="page-content">
+        <slot />
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <Footer lang={lang} />
+
+    <!-- Scroll to top button -->
+    <button class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll to top">
+      ↑
+    </button>
+  </body>
+</html>
+
+<style>
+  .scroll-top-btn {
+    position: fixed;
+    bottom: 28px;
+    right: 24px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(91, 92, 255, 0.1);
+    font-size: 18px;
+    color: var(--color-text-primary);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(8px);
+    transition: opacity 0.25s ease, transform 0.25s ease, background 0.2s ease, box-shadow 0.2s ease;
+    z-index: 99;
+  }
+
+  .scroll-top-btn.visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .scroll-top-btn:hover {
+    background: #fff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15), 0 2px 6px rgba(91, 92, 255, 0.15);
+  }
+
+  .scroll-top-btn:active {
+    transform: scale(0.92);
+  }
+</style>
+
+<script>
+  const btn = document.getElementById('scroll-top-btn');
+  if (btn) {
+    window.addEventListener('scroll', () => {
+      btn.classList.toggle('visible', window.scrollY > 300);
+    }, { passive: true });
+
+    btn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+</script>

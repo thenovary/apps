@@ -1,0 +1,84 @@
+---
+/**
+ * AppSubNav — 앱 상세 페이지 내 5개 섹션 탭 네비게이션
+ */
+import type { Lang } from '../i18n/utils';
+import { t } from '../i18n/utils';
+
+interface Props {
+  lang: Lang;
+  slug: string;
+  active: 'intro' | 'privacy' | 'terms' | 'support' | 'license';
+}
+
+const { lang, slug, active } = Astro.props;
+
+const tabs = [
+  { key: 'intro',   href: `/${lang}/apps/${slug}/`,         label: t(lang, 'appNav.intro') },
+  { key: 'privacy', href: `/${lang}/apps/${slug}/privacy/`, label: t(lang, 'appNav.privacy') },
+  { key: 'terms',   href: `/${lang}/apps/${slug}/terms/`,   label: t(lang, 'appNav.terms') },
+  { key: 'support', href: `/${lang}/apps/${slug}/support/`, label: t(lang, 'appNav.support') },
+  { key: 'license', href: `/${lang}/apps/${slug}/license/`, label: t(lang, 'appNav.license') },
+] as const;
+---
+
+<nav class="app-subnav" aria-label="App sections">
+  <div class="subnav-scroll">
+    {tabs.map(tab => (
+      <a
+        href={tab.href}
+        class={`subnav-tab ${active === tab.key ? 'is-active' : ''}`}
+        aria-current={active === tab.key ? 'page' : undefined}
+      >
+        {tab.label}
+      </a>
+    ))}
+  </div>
+</nav>
+
+<style>
+  .app-subnav {
+    border-bottom: 1px solid var(--color-border);
+    margin-bottom: var(--space-2xl);
+  }
+
+  .subnav-scroll {
+    display: flex;
+    gap: 2px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 1px;
+  }
+
+  .subnav-scroll::-webkit-scrollbar {
+    display: none;
+  }
+
+  .subnav-tab {
+    flex-shrink: 0;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+    transition:
+      color var(--duration-fast) var(--ease-smooth),
+      border-color var(--duration-fast) var(--ease-smooth);
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+  }
+
+  .subnav-tab:hover {
+    color: var(--color-text-primary);
+  }
+
+  .subnav-tab.is-active {
+    color: var(--color-accent);
+    font-weight: 600;
+    border-bottom-color: var(--color-accent);
+  }
+</style>

@@ -1,0 +1,50 @@
+{
+  "nav": {
+    "apps": "앱",
+    "license": "라이선스",
+    "contact": "문의"
+  },
+  "home": {
+    "eyebrow": "가장 선명한 시작",
+    "headline1": "Pure Innovation,",
+    "headline2": "Pure Experience.",
+    "subtitle": "thenovary는 새로운 가치를 탐구하고, 이를 앱이라는 도구로 구체화하는 브랜드 스튜디오입니다. 우리는 단편적인 기능을 넘어, 하나의 유기적인 브랜드로서 당신의 디지털 라이프를 새롭게 정의합니다.",
+    "ctaPrimary": "앱 살펴보기",
+    "ctaSecondary": "문의하기",
+    "appsTitle": "앱",
+    "viewDetails": "자세히 보기"
+  },
+  "app": {
+    "platform": "플랫폼",
+    "downloadOn": "다운로드",
+    "appStore": "App Store",
+    "googlePlay": "Google Play",
+    "backToHome": "홈으로"
+  },
+  "appNav": {
+    "intro": "앱 소개",
+    "privacy": "개인정보 처리방침",
+    "terms": "서비스 이용약관",
+    "support": "고객지원",
+    "license": "라이선스"
+  },
+  "appPage": {
+    "lastUpdated": "최종 업데이트:",
+    "developer": "개발사",
+    "supportEmail": "문의 이메일",
+    "sendEmail": "이메일 보내기"
+  },
+  "license": {
+    "title": "라이선스",
+    "subtitle": "thenovary 앱에서 사용된 오픈소스 및 에셋의 라이선스 목록입니다."
+  },
+  "contact": {
+    "title": "문의",
+    "subtitle": "궁금한 점이 있으시면 언제든지 연락해 주세요.",
+    "emailLabel": "이메일",
+    "emailButton": "이메일 보내기"
+  },
+  "footer": {
+    "copyright": "© 2026 thenovary. All rights reserved."
+  }
+}

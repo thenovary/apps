@@ -1,0 +1,409 @@
+---
+/**
+ * Home page — /ko/ and /en/
+ */
+import Layout from '../../components/Layout.astro';
+import AppCard from '../../components/AppCard.astro';
+import { getLang, t } from '../../i18n/utils';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'ko' } },
+    { params: { lang: 'en' } },
+  ];
+}
+
+const lang = getLang(Astro.params.lang);
+
+const appFiles = import.meta.glob('../../data/apps/*.json', { eager: true });
+const apps = Object.values(appFiles)
+  .map(m => (m as { default: unknown }).default ?? m)
+  .sort((a: any, b: any) => a.order - b.order);
+---
+
+<Layout
+  lang={lang}
+  title="thenovary"
+  description={lang === 'ko'
+    ? '혁신적인 앱을 만드는 스튜디오 thenovary'
+    : 'thenovary — A studio that crafts innovative apps'}
+>
+  <!-- Hero section -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <!-- Left: text content -->
+      <div class="hero-text">
+        <p class="hero-eyebrow">{t(lang, 'home.eyebrow')}</p>
+        <h1 class="hero-headline">
+          <span>{t(lang, 'home.headline1')}</span><br />
+          <span>{t(lang, 'home.headline2')}</span>
+        </h1>
+        <p class="hero-subtitle">{t(lang, 'home.subtitle')}</p>
+        <div class="hero-cta-row">
+          <a href="#apps" class="btn btn-primary">{t(lang, 'home.ctaPrimary')}</a>
+          <a href={`/${lang}/contact/`} class="btn btn-secondary">{t(lang, 'home.ctaSecondary')}</a>
+        </div>
+      </div>
+
+      <!-- Right: Floating glass card composition -->
+      <div class="hero-visual">
+        <div class="glass-comp">
+          <!-- Background aurora glow blobs -->
+          <div class="comp-glow glow-violet"></div>
+          <div class="comp-glow glow-blue"></div>
+          <div class="comp-glow glow-cyan"></div>
+
+          <!-- Main glass card -->
+          <div class="card-main-wrap">
+            <div class="card-main">
+              <div class="card-gradient"></div>
+
+              <div class="card-footer">
+                <span class="card-brand-text">thenovary</span>
+                <span class="card-badge">App Studio</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating app cards -->
+          <div class="appcard appcard-1">
+            <img src="/icons/pommo.png" alt="Pommo" class="appcard-icon"/>
+            <span class="appcard-name">Pommo</span>
+          </div>
+
+          <div class="appcard appcard-2">
+            <img src="/icons/deepread.png" alt="deepread" class="appcard-icon"/>
+            <span class="appcard-name">deepread</span>
+          </div>
+
+          <div class="appcard appcard-3">
+            <img src="/icons/nookdex.png" alt="NookDex" class="appcard-icon"/>
+            <span class="appcard-name">{lang === 'ko' ? '모여봐요 도감' : 'NookDex'}</span>
+          </div>
+
+          <!-- Decorative dots -->
+          <div class="cdot cdot-1"></div>
+          <div class="cdot cdot-2"></div>
+          <div class="cdot cdot-3"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Apps section -->
+  <section class="section-sm apps-section" id="apps">
+    <div class="container">
+      <h2 class="section-title">{t(lang, 'home.appsTitle')}</h2>
+      <div class="apps-grid">
+        {apps.map((app: any) => (
+          <AppCard app={app} lang={lang} />
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  /* ---- Hero ---- */
+  .hero {
+    padding-top: calc(var(--gnb-height) + var(--space-2xl));
+    padding-bottom: var(--space-2xl);
+    min-height: 88vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .hero-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: var(--space-2xl);
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ---- Left: text ---- */
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+  }
+
+  .hero-eyebrow {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+  }
+
+  .hero-headline {
+    font-size: clamp(36px, 4.5vw, 60px);
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 1.05;
+    color: var(--color-text-primary);
+  }
+
+  .hero-subtitle {
+    font-size: 17px;
+    color: var(--color-text-secondary);
+    line-height: 1.75;
+    max-width: 480px;
+  }
+
+  .hero-cta-row {
+    display: flex;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+  }
+
+  /* ---- Right: Glass composition ---- */
+  .hero-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--space-xl) var(--space-lg);
+  }
+
+  .glass-comp {
+    position: relative;
+    width: 340px;
+    height: 420px;
+    flex-shrink: 0;
+  }
+
+  /* Glow blobs — hidden, global aurora-bg handles background */
+  .comp-glow {
+    display: none;
+  }
+
+  /* Main card wrapper handles positioning + rotation */
+  .card-main-wrap {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%) rotate(-4deg);
+    animation: main-float 9s ease-in-out infinite;
+  }
+
+  /* Main card */
+  .card-main {
+    width: 200px;
+    height: 260px;
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.88);
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow:
+      0 32px 80px rgba(91, 92, 255, 0.20),
+      0 8px 24px rgba(0, 0, 0, 0.07),
+      inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    position: relative;
+  }
+
+  /* Colorful gradient interior */
+  .card-gradient {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse at 25% 20%, rgba(130, 100, 255, 0.55) 0%, transparent 58%),
+      radial-gradient(ellipse at 80% 75%, rgba(0, 200, 255, 0.40) 0%, transparent 55%),
+      radial-gradient(ellipse at 55% 50%, rgba(210, 160, 255, 0.35) 0%, transparent 60%),
+      linear-gradient(145deg, rgba(240, 235, 255, 0.6) 0%, rgba(220, 240, 255, 0.4) 100%);
+  }
+
+  /* Card footer label */
+  .card-footer {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    padding: 16px 18px;
+    background: linear-gradient(to top, rgba(255,255,255,0.92) 0%, transparent 100%);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .card-brand-text {
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: var(--color-text-primary);
+  }
+  .card-badge {
+    display: inline-flex;
+    align-self: flex-start;
+    padding: 3px 9px;
+    border-radius: var(--radius-pill);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    background: rgba(91, 92, 255, 0.12);
+    color: var(--color-accent);
+  }
+
+  /* App mini cards */
+  .appcard {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    background: rgba(255, 255, 255, 0.82);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+    box-shadow:
+      0 12px 32px rgba(0, 0, 0, 0.09),
+      0 2px 8px rgba(91, 92, 255, 0.08),
+      inset 0 1px 0 rgba(255, 255, 255, 1);
+    white-space: nowrap;
+    z-index: 2;
+  }
+  .appcard-icon {
+    width: 36px; height: 36px;
+    border-radius: 10px;
+    object-fit: cover;
+    flex-shrink: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  }
+  .appcard-name {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    letter-spacing: -0.01em;
+  }
+
+  .appcard-1 {
+    top: 2%;
+    right: -16px;
+    animation: float-a 6s ease-in-out infinite;
+  }
+  .appcard-2 {
+    top: 42%;
+    left: -20px;
+    animation: float-b 7.5s ease-in-out infinite 2s;
+  }
+  .appcard-3 {
+    bottom: 4%;
+    right: -8px;
+    animation: float-c 5.5s ease-in-out infinite 4s;
+  }
+
+  /* Decorative dots */
+  .cdot {
+    position: absolute;
+    border-radius: 50%;
+    z-index: 3;
+  }
+  .cdot-1 {
+    width: 9px; height: 9px;
+    top: 20%; left: 6%;
+    background: #c084fc;
+    box-shadow: 0 0 16px rgba(192, 132, 252, 0.9);
+    animation: float-a 5s ease-in-out infinite 1s;
+  }
+  .cdot-2 {
+    width: 6px; height: 6px;
+    bottom: 25%; right: 6%;
+    background: #38bdf8;
+    box-shadow: 0 0 12px rgba(56, 189, 248, 0.9);
+    animation: float-b 7s ease-in-out infinite 3s;
+  }
+  .cdot-3 {
+    width: 7px; height: 7px;
+    top: 58%; left: 3%;
+    background: #818cf8;
+    box-shadow: 0 0 12px rgba(129, 140, 248, 0.9);
+    animation: float-c 8s ease-in-out infinite 5s;
+  }
+
+  @keyframes main-float {
+    0%, 100% { transform: translate(-50%, -50%) rotate(-4deg) translateY(0); }
+    50%       { transform: translate(-50%, -50%) rotate(-4deg) translateY(-10px); }
+  }
+  @keyframes float-a {
+    0%, 100% { transform: translateY(0); }
+    50%       { transform: translateY(-10px); }
+  }
+  @keyframes float-b {
+    0%, 100% { transform: translateY(0); }
+    50%       { transform: translateY(-8px); }
+  }
+  @keyframes float-c {
+    0%, 100% { transform: translateY(0); }
+    50%       { transform: translateY(-12px); }
+  }
+
+  /* ---- Apps section ---- */
+  .apps-section {
+    padding-bottom: var(--space-3xl);
+    scroll-margin-top: var(--gnb-height);
+  }
+
+  .section-title {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-lg);
+  }
+
+  .apps-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+
+  @media (min-width: 640px) {
+    .apps-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  /* ---- Mobile ---- */
+  @media (max-width: 768px) {
+    .hero {
+      min-height: auto;
+      padding-top: calc(var(--gnb-height) + var(--space-md));
+      padding-bottom: var(--space-xl);
+    }
+
+    .hero-inner {
+      grid-template-columns: 1fr;
+      gap: var(--space-lg);
+    }
+
+    .hero-eyebrow { font-size: 11px; }
+    .hero-headline { font-size: 36px; letter-spacing: -0.03em; }
+    .hero-subtitle { font-size: 15px; line-height: 1.65; }
+    .hero-cta-row { gap: var(--space-sm); }
+    .hero-text { gap: var(--space-md); order: 2; }
+
+    .hero-visual {
+      order: 1;
+      padding: 16px 0 8px;
+      overflow-x: hidden;
+    }
+
+    .glass-comp {
+      width: 230px;
+      height: 285px;
+      margin: 0 auto;
+    }
+
+    .appcard-1 { top: 4%; right: -8px; }
+    .appcard-2 { top: 44%; left: -8px; }
+    .appcard-3 { bottom: 4%; right: -8px; }
+
+    .appcard { padding: 7px 10px; gap: 7px; border-radius: 12px; }
+    .appcard-icon { width: 26px; height: 26px; border-radius: 7px; }
+    .appcard-name { font-size: 11px; }
+
+    .cdot { display: none; }
+    .comp-glow { display: none; }
+  }
+</style>

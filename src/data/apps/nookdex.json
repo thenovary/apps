@@ -1,0 +1,330 @@
+{
+  "slug": "nookdex",
+  "order": 3,
+  "icon": "/icons/nookdex.png",
+  "name": {
+    "default": "NookDex",
+    "ko": "모여봐요 도감",
+    "en": "NookDex",
+    "ja": "あつ森手帳"
+  },
+  "tagline": {
+    "ko": "모여봐요 동물의 숲 컴패니언 앱",
+    "en": "Your Animal Crossing companion app"
+  },
+  "description": {
+    "ko": "'모여봐요 도감'과 함께 더욱 풍성하고 즐거운 모동숲 섬 생활을 시작해 보세요! 🍃🌷\n\n✨ 주요 기능\n· 최애 주민 토너먼트: 내가 가장 좋아하는 주민은 누구? 토너먼트로 즐겨보세요! ✨\n· 통합 도감: 모든 주민, 물고기, 곤충, 해산물, 아이템 정보를 한눈에!\n· 실시간 생물 정보: 지금 내 섬에서 바로 잡을 수 있는 생물을 실시간으로 확인하세요.\n· 상세 필터: 서식지, 가격, 출현 시간대별로 원하는 정보를 쏙쏙!\n· 체크리스트: 기증 여부를 체크하며 나만의 박물관 수집 현황을 관리해 보세요.\n· 테마 커스텀: 내 취향대로 원하는 테마 컬러를 설정하여 어플을 사용해 보세요.\n\n면책 조항 (Disclaimer)\n본 앱은 비공식 가이드 앱입니다. 본 앱은 Nintendo(닌텐도) 또는 '모여봐요 동물의 숲'의 공식 상표와 관련이 없으며, 게임 내에 사용된 모든 저작권 및 상표권은 각 소유자에게 있습니다.",
+    "en": "Make your island life even more fun and fulfilling with NookDex! 🍃🌷\n\n✨ Key Features\n· Favorite Villager Tournament: Who's your all-time favorite villager? Find out with a fun tournament! ✨\n· All-in-One Compendium: Browse every villager, fish, bug, sea creature, and item in one place!\n· Real-Time Critter Info: See exactly which critters are available to catch on your island right now.\n· Advanced Filters: Filter by habitat, sell price, and time of appearance to find what you need.\n· Checklist: Track your museum donations and manage your personal collection progress.\n· Theme Customization: Set your favorite theme color and make the app truly your own.\n\nDisclaimer\nThis is an unofficial guide app. NookDex is not affiliated with or endorsed by Nintendo or Animal Crossing: New Horizons. All copyrights and trademarks belong to their respective owners."
+  },
+  "platforms": ["android"],
+  "platformsNote": {
+    "ko": "iOS 출시 예정",
+    "en": "iOS coming soon"
+  },
+  "links": {
+    "appStore": "",
+    "googlePlay": "https://play.google.com/store/apps/details?id=com.thenovary.acnh_companion"
+  },
+  "privacy": {
+    "lastUpdated": {
+      "ko": "2026년 2월 20일",
+      "en": "February 20, 2026"
+    },
+    "sections": [
+      {
+        "title": {
+          "ko": "개요",
+          "en": "Overview"
+        },
+        "content": {
+          "ko": "본 애플리케이션은 동물의 숲: 모여봐요 동물의 숲 컬렉션 가이드 앱으로, 비공식 팬 제작 애플리케이션입니다. 본 애플리케이션은 Nintendo와 제휴, 승인 또는 후원을 받지 않았습니다. 관련 게임 자산, 캐릭터 및 상표의 모든 권리는 해당 권리자에게 있습니다.\n\n본 애플리케이션은 회원가입을 요구하지 않으며, 자체 서버를 운영하지 않습니다. 수집 진행 정보, 섬 정보, 이미지, 설정 등 사용자가 생성한 모든 데이터는 이용자의 기기에 로컬로 저장됩니다.",
+          "en": "This application is an unofficial, fan-made collection guide app for Animal Crossing: New Horizons. It is not affiliated with, endorsed by, or sponsored by Nintendo. All rights to related game assets, characters, and trademarks belong to their respective owners.\n\nThis application does not require account registration and does not operate its own servers. All user-generated data — including collection progress, island information, images, and settings — is stored locally on the user's device."
+        }
+      },
+      {
+        "title": {
+          "ko": "개인정보의 수집 및 이용",
+          "en": "Collection and Use of Personal Information"
+        },
+        "content": {
+          "ko": "개발자는 이용자의 개인정보를 직접 수집, 저장, 전송 또는 처리하지 않습니다.\n\n다만, 광고 및 인앱 결제 기능 제공을 위해 제3자 서비스를 사용하며, 이 과정에서 해당 서비스는 자체 개인정보처리방침에 따라 일부 정보를 자동으로 수집할 수 있습니다. 수집될 수 있는 정보는 다음과 같습니다:\n\n기기 정보\n광고 식별자\n앱 사용 및 상호작용 정보\n결제 정보(인앱 결제 시)\nIP 주소\n\n개발자는 제3자 서비스가 수집하는 데이터에 접근하거나 이를 통제하지 않습니다.",
+          "en": "The developer does not directly collect, store, transmit, or process users' personal information.\n\nHowever, third-party services are used to provide advertising and in-app purchase functionality. In the course of providing these services, those parties may automatically collect certain information in accordance with their own privacy policies. Information that may be collected includes:\n\nDevice information\nAdvertising identifiers\nApp usage and interaction data\nPayment information (when making in-app purchases)\nIP address\n\nThe developer does not have access to or control over the data collected by third-party services."
+        }
+      },
+      {
+        "title": {
+          "ko": "카메라 및 사진 접근",
+          "en": "Camera and Photo Access"
+        },
+        "content": {
+          "ko": "애플리케이션은 사용자가 섬 정보 입력란에 사진을 첨부하거나, 앱 내의 정보를 이미지로 생성하여 기기에 저장(내보내기)할 수 있도록 하기 위해 기기의 카메라 및 사진 보관함(미디어 저장소) 접근 권한을 요청할 수 있습니다.\n\n사용자가 촬영하거나 선택한 이미지, 그리고 앱을 통해 저장된 이미지는 이용자의 기기에 로컬로 저장되며, 개발자는 해당 이미지를 별도로 수집, 업로드, 전송, 외부 저장 또는 접근하지 않습니다. 카메라 및 미디어 파일 접근은 이용자의 명시적인 동작과 권한 허용이 있을 경우에만 사용됩니다.",
+          "en": "The application may request permission to access the device's camera and photo library (media storage) in order to allow users to attach photos to island information fields, or to generate images from in-app content and save (export) them to the device.\n\nImages captured or selected by the user, as well as images saved through the app, are stored locally on the user's device. The developer does not separately collect, upload, transmit, externally store, or access those images. Camera and media file access is used only when the user explicitly performs the relevant action and grants the necessary permission."
+        }
+      },
+      {
+        "title": {
+          "ko": "광고 및 결제",
+          "en": "Advertising and Payments"
+        },
+        "content": {
+          "ko": "모여봐요 도감은 앱 일부 영역에서 Google AdMob을 통해 광고를 표시할 수 있습니다. 광고 제공업체는 자체 개인정보 처리방침에 따라 기기 정보, 광고 식별자, IP 주소, 앱 상호작용 데이터 등을 자동으로 처리할 수 있습니다. 앱 내 결제를 하는 경우 결제 처리와 복원은 Apple App Store 또는 Google Play Billing을 통해 이루어집니다. 모여봐요 도감은 유료 기능 잠금 해제를 유지하기 위해 구매 상태를 기기에 로컬로 저장할 수 있습니다.",
+          "en": "NookDex may display advertisements in certain areas of the app via Google AdMob. Ad providers may automatically process device information, advertising identifiers, IP addresses, app interaction data, and similar information in accordance with their own privacy policies. When in-app purchases are made, payment processing and restoration are handled through Apple App Store or Google Play Billing. NookDex may store purchase status locally on the device in order to maintain access to unlocked paid features."
+        }
+      },
+      {
+        "title": {
+          "ko": "제3자 서비스",
+          "en": "Third-Party Services"
+        },
+        "content": {
+          "ko": "애플리케이션은 다음과 같은 제3자 서비스를 사용합니다:\n\nGoogle Play Services\nGoogle AdMob (광고)\nGoogle Play Billing (인앱 결제)\n\n이들 서비스는 각자의 개인정보처리방침에 따라 독립적으로 데이터를 처리할 수 있습니다.",
+          "en": "The application uses the following third-party services:\n\nGoogle Play Services\nGoogle AdMob (advertising)\nGoogle Play Billing (in-app purchases)\n\nThese services may independently process data in accordance with their respective privacy policies."
+        }
+      },
+      {
+        "title": {
+          "ko": "데이터 저장",
+          "en": "Data Storage"
+        },
+        "content": {
+          "ko": "수집 진행 정보, 섬 정보, 설정 등 애플리케이션 내 사용자 데이터는 모두 이용자의 기기에 로컬로 저장됩니다. 개발자는 해당 데이터에 접근할 수 없습니다.",
+          "en": "All user data within the application — including collection progress, island information, and settings — is stored locally on the user's device. The developer has no access to this data."
+        }
+      },
+      {
+        "title": {
+          "ko": "데이터 공유",
+          "en": "Data Sharing"
+        },
+        "content": {
+          "ko": "개발자는 개인정보를 판매하지 않습니다. 다만, 광고 및 결제 처리 목적에 한하여 위에서 명시한 제3자 서비스 제공자가 데이터를 처리할 수 있습니다.",
+          "en": "The developer does not sell personal information. However, the third-party service providers identified above may process data solely for the purposes of advertising and payment processing."
+        }
+      },
+      {
+        "title": {
+          "ko": "아동의 개인정보 보호",
+          "en": "Protection of Children's Privacy"
+        },
+        "content": {
+          "ko": "본 애플리케이션은 만 13세 미만 아동을 주요 대상으로 하지 않습니다. 개발자는 아동의 개인정보를 고의로 수집하지 않습니다.",
+          "en": "This application is not directed primarily at children under the age of 13. The developer does not knowingly collect personal information from children."
+        }
+      },
+      {
+        "title": {
+          "ko": "데이터 보관",
+          "en": "Data Retention"
+        },
+        "content": {
+          "ko": "개발자가 개인정보를 수집하거나 서버에 저장하지 않으므로 별도의 원격 데이터 보관은 이루어지지 않습니다. 이용자는 애플리케이션을 삭제함으로써 기기에 저장된 모든 데이터를 제거할 수 있습니다.",
+          "en": "As the developer does not collect personal information or store it on servers, no remote data retention takes place. Users can remove all data stored on their device by uninstalling the application."
+        }
+      },
+      {
+        "title": {
+          "ko": "보안",
+          "en": "Security"
+        },
+        "content": {
+          "ko": "개발자는 본 애플리케이션과 관련하여 서버 또는 원격 데이터베이스를 운영하지 않습니다.",
+          "en": "The developer does not operate any servers or remote databases in connection with this application."
+        }
+      },
+      {
+        "title": {
+          "ko": "변경 사항",
+          "en": "Changes to This Policy"
+        },
+        "content": {
+          "ko": "본 개인정보 처리방침은 필요 시 수정될 수 있으며, 변경 사항은 본 페이지에 반영됩니다.",
+          "en": "This Privacy Policy may be updated from time to time. Any changes will be reflected on this page."
+        }
+      },
+      {
+        "title": {
+          "ko": "문의",
+          "en": "Contact"
+        },
+        "content": {
+          "ko": "infodeskline@gmail.com",
+          "en": "infodeskline@gmail.com"
+        }
+      }
+    ]
+  },
+  "terms": {
+    "lastUpdated": {
+      "ko": "2026년 2월 20일",
+      "en": "February 20, 2026"
+    },
+    "sections": [
+      {
+        "title": {
+          "ko": "제1조 목적",
+          "en": "Article 1. Purpose"
+        },
+        "content": {
+          "ko": "본 약관은 thenovary(이하 \"운영자\")이 제공하는 모바일 애플리케이션 \"모여봐요 도감(NookDex)\" 및 이에 부수하는 관련 서비스(이하 \"서비스\")의 이용과 관련하여 운영자와 이용자 간의 권리, 의무 및 책임사항, 기타 필요한 사항을 규정함을 목적으로 합니다.",
+          "en": "The purpose of these Terms of Service is to set forth the rights, obligations, responsibilities, and other necessary matters between thenovary (hereinafter \"Operator\") and users in connection with the use of the mobile application \"NookDex\" and related services (hereinafter \"Service\") provided by the Operator."
+        }
+      },
+      {
+        "title": {
+          "ko": "제2조 정의",
+          "en": "Article 2. Definitions"
+        },
+        "content": {
+          "ko": "1. \"서비스\"란 운영자가 제공하는 Animal Crossing: New Horizons 관련 정보 제공형 모바일 앱 서비스로서, 주민/아이템/생물 도감 조회, 수집 현황 관리, 프로필 및 여권형 카드 작성, 최애 주민 토너먼트, 이미지 저장, 광고 제거 및 프리미엄 기능 등을 포함합니다.\n2. \"이용자\"란 본 약관에 동의하고 서비스를 설치하거나 이용하는 자를 말합니다.\n3. \"유료서비스\"란 서비스 내에서 앱마켓을 통해 구매할 수 있는 광고 제거, 프리미엄 테마 잠금 해제, 통합 프리미엄, 후원형 상품 등 인앱 결제 상품을 말합니다.\n4. \"앱마켓\"이란 Apple App Store, Google Play 등 운영자가 서비스를 배포하거나 유료서비스 결제를 제공하는 제3자 플랫폼을 말합니다.",
+          "en": "1. \"Service\" refers to the Animal Crossing: New Horizons information and companion mobile app service provided by the Operator, including villager/item/critter compendium browsing, collection tracking, profile and passport card creation, favorite villager tournaments, image saving, ad removal, and premium features.\n2. \"User\" refers to any person who agrees to these Terms and installs or uses the Service.\n3. \"Paid Service\" refers to in-app purchase products available within the Service through an app marketplace, such as ad removal, premium theme unlocks, all-in-one premium, and supporter items.\n4. \"App Marketplace\" refers to third-party platforms through which the Operator distributes the Service or provides payment for Paid Services, such as Apple App Store and Google Play."
+        }
+      },
+      {
+        "title": {
+          "ko": "제3조 약관의 효력 및 변경",
+          "en": "Article 3. Effect and Amendment of Terms"
+        },
+        "content": {
+          "ko": "1. 본 약관은 서비스 내 화면, 앱마켓 페이지 또는 별도 연결 화면에 게시함으로써 효력이 발생합니다.\n2. 운영자는 관련 법령을 위반하지 않는 범위에서 본 약관을 변경할 수 있습니다.\n3. 운영자가 약관을 변경하는 경우에는 적용일자 및 변경사유를 명시하여 적용일 전부터 서비스 내 또는 관련 안내 화면을 통해 고지합니다.\n4. 이용자가 변경된 약관 시행일 이후에도 서비스를 계속 이용하는 경우, 변경 약관에 동의한 것으로 봅니다. 다만 이용자에게 불리한 변경의 경우에는 관련 법령이 정하는 방식에 따릅니다.",
+          "en": "1. These Terms take effect upon being posted within the Service, on an app marketplace page, or on a separately linked screen.\n2. The Operator may amend these Terms to the extent permitted by applicable laws and regulations.\n3. When amending these Terms, the Operator will specify the effective date and reason for the change and provide notice within the Service or through a relevant information screen prior to the effective date.\n4. If a User continues to use the Service after the effective date of the amended Terms, the User shall be deemed to have agreed to the amended Terms. However, where changes are unfavorable to users, the procedures prescribed by applicable law shall apply."
+        }
+      },
+      {
+        "title": {
+          "ko": "제4조 서비스의 성격 및 제공 내용",
+          "en": "Article 4. Nature and Content of the Service"
+        },
+        "content": {
+          "ko": "1. 서비스는 회원가입 없이 이용 가능한 정보 제공 및 개인 기록 관리 중심의 팬 기반 보조 앱입니다.\n2. 서비스는 다음 기능을 포함할 수 있습니다.\n- 주민, 물고기, 곤충, 해산물, 아이템, 레시피 등 게임 데이터 조회\n- 위시리스트, 거주 주민, 수집 여부, 수집 진행률 등 개인 기록 관리\n- 이용자 프로필, 섬 정보, 친구 코드, 꿈번지, 디자인 코드, 생일, 최애 주민, 프로필 사진 등 입력 및 표시\n- 여권형 카드 및 토너먼트 결과 이미지 생성, 미리보기 및 기기 저장\n- 다국어, 테마 변경, 광고 시청, 광고 제거 및 프리미엄 기능 이용\n3. 서비스는 Animal Crossing: New Horizons의 비공식 팬 앱이며, Nintendo Co., Ltd. 또는 그 계열사와 제휴, 보증, 후원 관계에 있지 않습니다.\n4. 서비스에 포함된 게임명, 캐릭터명, 이미지, 상표 및 기타 지식재산권은 각 권리자에게 귀속됩니다.",
+          "en": "1. The Service is a fan-based companion app focused on information browsing and personal record management, available without account registration.\n2. The Service may include the following features:\n- Browsing game data including villagers, fish, insects, sea creatures, items, and recipes\n- Managing personal records such as wishlists, current residents, collection status, and collection progress\n- Entering and displaying user profile information, island details, friend codes, dream addresses, design codes, birthdays, favorite villagers, and profile photos\n- Generating, previewing, and saving passport card and tournament result images to the device\n- Multilingual support, theme customization, ad viewing, ad removal, and use of premium features\n3. The Service is an unofficial fan app for Animal Crossing: New Horizons and is not affiliated with, endorsed by, or sponsored by Nintendo Co., Ltd. or its affiliates.\n4. Game titles, character names, images, trademarks, and other intellectual property included in the Service are owned by their respective rights holders."
+        }
+      },
+      {
+        "title": {
+          "ko": "제5조 이용계약의 성립 및 이용",
+          "en": "Article 5. Formation and Use of the Service Agreement"
+        },
+        "content": {
+          "ko": "1. 이용계약은 이용자가 본 약관에 동의하고 서비스를 설치 또는 이용함으로써 성립합니다.\n2. 서비스는 원칙적으로 연중무휴, 1일 24시간 제공함을 원칙으로 하나, 유지보수, 앱마켓 심사, 기기 환경, 통신 장애, 제3자 서비스 장애 등에 따라 일부 또는 전부가 제한될 수 있습니다.\n3. 운영자는 서비스의 전부 또는 일부를 업데이트, 수정, 중단하거나 제공 범위를 변경할 수 있습니다.\n4. 이용자는 언제든지 앱 삭제를 통해 서비스 이용을 종료할 수 있습니다.",
+          "en": "1. The service agreement is formed when a User agrees to these Terms and installs or uses the Service.\n2. In principle, the Service is provided 24 hours a day, 365 days a year; however, all or part of the Service may be restricted due to maintenance, app marketplace review, device conditions, network failures, third-party service outages, or similar circumstances.\n3. The Operator may update, modify, or suspend all or part of the Service, or change the scope of features provided.\n4. Users may terminate use of the Service at any time by uninstalling the app."
+        }
+      },
+      {
+        "title": {
+          "ko": "제6조 기기 저장 정보 및 권한 사용",
+          "en": "Article 6. Device-Stored Information and Permission Usage"
+        },
+        "content": {
+          "ko": "1. 서비스는 회원 계정 서버를 통한 이용보다 이용자 기기 내 로컬 저장을 중심으로 동작합니다.\n2. 서비스는 원활한 기능 제공을 위해 다음 정보를 이용자 기기에 저장할 수 있습니다.\n- 프로필 정보: 이름, 섬 이름, 반구, 과일, 생일, 친구 코드, 꿈번지, 마이디자인 코드, 해피홈 네트워크 ID, 날짜 시드, 최애 주민, 프로필 사진 경로\n- 개인 활동 정보: 위시리스트, 거주 주민, 수집 여부, 수집 진행률, 토너먼트 진행 상태 및 결과\n- 환경설정 정보: 언어, 테마, 구매 상태 확인을 위한 로컬 캐시\n3. 서비스는 다음 권한 또는 기기 기능을 사용할 수 있습니다.\n- 사진 보관함 또는 이미지 접근 권한: 프로필 사진 선택, 생성 이미지 저장\n- 인터넷 연결: 광고 제공, 앱마켓 결제 처리, 외부 이미지 불러오기 등\n4. 이용자가 앱을 삭제하거나 기기를 변경하는 경우, 로컬에 저장된 일부 또는 전부의 데이터가 복구되지 않을 수 있습니다. 운영자는 이용자 기기 내 로컬 데이터의 손실에 대해 운영자의 고의 또는 중대한 과실이 없는 한 책임을 지지 않습니다.\n5. 개인정보 처리에 관한 구체적 사항은 별도로 게시하는 개인정보처리방침에 따릅니다.",
+          "en": "1. The Service operates primarily through local storage on the user's device rather than through a user account server.\n2. To provide smooth functionality, the Service may store the following information on the user's device:\n- Profile information: name, island name, hemisphere, native fruit, birthday, friend code, dream address, Nook Miles design code, Happy Home Network ID, date seed, favorite villager, and profile photo path\n- Personal activity data: wishlists, current residents, collection status, collection progress, and tournament progress and results\n- Preference settings: language, theme, and local cache for verifying purchase status\n3. The Service may use the following permissions or device features:\n- Photo library or image access: for selecting a profile photo and saving generated images\n- Internet connection: for serving ads, processing app marketplace payments, loading external images, and similar purposes\n4. If a User uninstalls the app or switches devices, some or all locally stored data may not be recoverable. The Operator shall not be liable for the loss of local data on the user's device unless caused by the Operator's willful misconduct or gross negligence.\n5. Specific details regarding the handling of personal information are governed by the separately published Privacy Policy."
+        }
+      },
+      {
+        "title": {
+          "ko": "제7조 광고 및 유료서비스",
+          "en": "Article 7. Advertising and Paid Services"
+        },
+        "content": {
+          "ko": "1. 서비스는 무료로 제공되나, 일부 화면에 배너 광고, 전면 광고, 보상형 광고 등 광고가 표시될 수 있습니다.\n2. 특정 기능은 광고 시청 또는 유료서비스 구매 이후에 제공될 수 있습니다. 예를 들어 여권 이미지 저장 또는 토너먼트 결과 이미지 저장과 같은 일부 기능은 광고 시청 또는 광고 제거 상품 구매가 필요할 수 있습니다.\n3. 유료서비스의 종류, 가격, 제공 방식, 세금 포함 여부는 각 앱마켓에 표시된 바에 따르며, 운영자는 필요 시 이를 변경할 수 있습니다.\n4. 인앱 결제는 앱마켓 사업자가 제공하는 결제 시스템을 통해 처리되며, 운영자는 이용자의 카드번호 등 결제수단 정보를 직접 저장하거나 관리하지 않습니다.\n5. 동일 앱마켓 계정에서 인정되는 범위 내에서 일부 비소모성 상품은 복원될 수 있으나, 복원 가능 여부는 앱마켓 정책과 기기 환경에 따라 달라질 수 있습니다.",
+          "en": "1. The Service is provided free of charge; however, banner ads, interstitial ads, rewarded ads, and other advertisements may appear on certain screens.\n2. Certain features may only become available after watching an advertisement or purchasing a Paid Service. For example, some features such as saving a passport image or saving a tournament result image may require watching an ad or purchasing an ad removal product.\n3. The types, prices, delivery methods, and tax-inclusiveness of Paid Services are as displayed on each app marketplace, and the Operator may modify these as necessary.\n4. In-app purchases are processed through the payment systems provided by app marketplace operators. The Operator does not directly store or manage users' payment method information such as card numbers.\n5. Certain non-consumable products may be restored within the scope recognized by the same app marketplace account; however, restorability may vary depending on app marketplace policies and device conditions."
+        }
+      },
+      {
+        "title": {
+          "ko": "제8조 청약철회, 환불 및 미성년자 결제",
+          "en": "Article 8. Cancellation, Refunds, and Purchases by Minors"
+        },
+        "content": {
+          "ko": "1. 유료서비스의 청약철회, 환불, 결제 취소 및 오류 정정은 관련 법령, 본 약관 및 각 앱마켓 사업자의 정책에 따릅니다.\n2. 이용자가 디지털 콘텐츠 또는 즉시 사용 가능한 유료서비스를 구매한 후 이미 사용하였거나 혜택이 개시된 경우에는 관련 법령상 청약철회가 제한될 수 있습니다.\n3. 후원형 또는 소모성 상품은 성질상 사용 또는 지급이 완료된 이후에는 환불이 제한될 수 있습니다. 다만 법령상 환불이 허용되는 경우는 예외로 합니다.\n4. 미성년자가 유료서비스를 구매하는 경우에는 법정대리인의 동의를 받아야 하며, 동의 없이 체결된 결제는 관련 법령 및 앱마켓 정책이 허용하는 범위에서 취소될 수 있습니다.",
+          "en": "1. Cancellation, refunds, payment reversal, and error correction for Paid Services are governed by applicable laws and regulations, these Terms, and the policies of each app marketplace operator.\n2. If a User has already used or begun receiving the benefits of a purchased digital content item or immediately usable Paid Service, the right to cancel may be restricted under applicable law.\n3. Supporter or consumable products may not be eligible for refund after use or delivery has been completed by their nature, except where refunds are permitted by applicable law.\n4. If a minor purchases a Paid Service, the consent of a legal guardian is required. Purchases made without such consent may be cancelled to the extent permitted by applicable laws and app marketplace policies."
+        }
+      },
+      {
+        "title": {
+          "ko": "제9조 이용자의 의무",
+          "en": "Article 9. User Obligations"
+        },
+        "content": {
+          "ko": "1. 이용자는 관련 법령, 본 약관, 서비스 이용안내 및 앱마켓 정책을 준수하여야 합니다.\n2. 이용자는 다음 행위를 하여서는 안 됩니다.\n- 서비스 또는 앱을 불법적인 목적에 이용하는 행위\n- 앱을 복제, 변조, 역설계, 디컴파일하거나 보안 기능을 우회하는 행위\n- 자동화 수단 등을 사용하여 서비스에 과도한 부하를 주는 행위\n- 서비스 내 데이터, 이미지, 화면 구성 등을 권리자의 허락 없이 상업적으로 이용하는 행위\n- 허위 결제, 부정 환불, 광고 조작 또는 그 시도\n- 제3자의 권리, 명예, 초상, 개인정보 또는 지식재산권을 침해하는 행위\n3. 이용자가 직접 입력하거나 저장한 정보의 정확성 및 적법성에 대한 책임은 이용자에게 있습니다.",
+          "en": "1. Users must comply with applicable laws and regulations, these Terms, Service usage guidelines, and app marketplace policies.\n2. Users must not engage in any of the following:\n- Using the Service or app for any unlawful purpose\n- Copying, modifying, reverse engineering, decompiling, or circumventing security features of the app\n- Placing excessive load on the Service through automated means or otherwise\n- Commercially exploiting data, images, screen layouts, or other content within the Service without the rights holder's permission\n- Fraudulent payments, unauthorized refunds, ad manipulation, or any attempt to do so\n- Infringing upon the rights, reputation, likeness, personal information, or intellectual property of any third party\n3. Users are responsible for the accuracy and legality of information they directly enter or store within the Service."
+        }
+      },
+      {
+        "title": {
+          "ko": "제10조 이미지 저장 및 외부 공유",
+          "en": "Article 10. Image Saving and External Sharing"
+        },
+        "content": {
+          "ko": "1. 서비스는 이용자가 입력한 정보와 앱 내 요소를 조합하여 여권 이미지 또는 토너먼트 결과 이미지를 생성하고, 이를 이용자 기기에 저장할 수 있도록 지원할 수 있습니다.\n2. 이용자가 생성 이미지를 외부 서비스에 게시, 전송, 공유하는 경우 그 공개 범위와 결과에 대한 책임은 이용자에게 있습니다.\n3. 이용자는 생성 이미지에 자신의 이름, 섬 이름, 친구 코드, 꿈번지, 생일, 프로필 사진 등 민감할 수 있는 정보가 포함될 수 있음을 인지하고, 공유 전에 스스로 공개 범위를 확인하여야 합니다.\n4. 운영자는 이용자가 외부로 공유한 정보로 인하여 발생한 분쟁이나 손해에 대하여 운영자의 고의 또는 중대한 과실이 없는 한 책임을 지지 않습니다.",
+          "en": "1. The Service may allow users to generate passport images or tournament result images by combining user-entered information with in-app elements, and to save these images to their device.\n2. If a User posts, sends, or shares a generated image on an external service, the User is solely responsible for the scope of disclosure and any consequences thereof.\n3. Users should be aware that generated images may contain potentially sensitive information such as their name, island name, friend code, dream address, birthday, and profile photo, and must verify the intended audience before sharing.\n4. The Operator shall not be liable for any disputes or damages arising from information shared externally by users, unless caused by the Operator's willful misconduct or gross negligence."
+        }
+      },
+      {
+        "title": {
+          "ko": "제11조 지식재산권",
+          "en": "Article 11. Intellectual Property"
+        },
+        "content": {
+          "ko": "1. 서비스에 관한 저작권, 편집저작물 작성권, 디자인, 구성, 로고, 문구 및 운영자가 작성한 콘텐츠에 대한 권리는 운영자 또는 정당한 권리자에게 귀속됩니다.\n2. 이용자는 운영자의 사전 서면 동의 없이 서비스를 통해 제공되는 자료를 복제, 송신, 출판, 배포, 방송, 전시, 판매하거나 2차적 저작물 작성 등 상업적으로 이용할 수 없습니다.\n3. 게임 관련 원저작물의 권리는 각 권리자에게 귀속되며, 이용자는 해당 권리를 침해하는 방식으로 서비스를 이용하여서는 안 됩니다.",
+          "en": "1. Copyrights, compilation rights, designs, layouts, logos, text, and rights to content created by the Operator in connection with the Service belong to the Operator or the respective legitimate rights holders.\n2. Without the Operator's prior written consent, Users may not reproduce, transmit, publish, distribute, broadcast, display, sell, or otherwise commercially exploit — including creating derivative works from — any materials provided through the Service.\n3. Rights to original game-related works belong to their respective rights holders, and Users must not use the Service in a manner that infringes upon those rights."
+        }
+      },
+      {
+        "title": {
+          "ko": "제12조 서비스 변경, 중단 및 데이터 정확성",
+          "en": "Article 12. Service Changes, Suspension, and Data Accuracy"
+        },
+        "content": {
+          "ko": "1. 운영자는 운영상, 기술상 필요에 따라 서비스의 일부 또는 전부를 변경하거나 중단할 수 있습니다.\n2. 서비스에 포함된 게임 정보, 이미지, 등장 조건, 시기, 번역명, 가격, 기타 데이터는 참고용으로 제공되며, 실제 게임 내 내용과 차이가 있을 수 있습니다.\n3. 운영자는 데이터 업데이트 지연, 기기별 표시 차이, 외부 이미지 로딩 실패, 앱마켓 정책 변경 등으로 인해 발생하는 일시적 오류를 최소화하기 위해 노력하나, 모든 정보의 완전성, 최신성, 무오류성을 보장하지는 않습니다.",
+          "en": "1. The Operator may modify or suspend all or part of the Service as necessary for operational or technical reasons.\n2. Game information, images, spawn conditions, timing, localized names, prices, and other data included in the Service are provided for reference purposes only and may differ from actual in-game content.\n3. The Operator endeavors to minimize temporary errors caused by data update delays, display differences across devices, external image loading failures, or app marketplace policy changes, but does not guarantee the completeness, currency, or accuracy of all information."
+        }
+      },
+      {
+        "title": {
+          "ko": "제13조 책임 제한",
+          "en": "Article 13. Limitation of Liability"
+        },
+        "content": {
+          "ko": "1. 운영자는 천재지변, 전쟁, 테러, 해킹, 통신망 장애, 기기 OS 문제, 앱마켓 또는 광고/결제 사업자 장애 등 불가항력 사유로 인하여 서비스를 제공할 수 없는 경우 책임을 지지 않습니다.\n2. 운영자는 이용자의 귀책사유로 인한 서비스 이용 장애, 기기 고장, 앱 삭제, 로컬 데이터 손실, 네트워크 문제에 대하여 책임을 지지 않습니다.\n3. 운영자는 제3자가 제공하는 앱마켓, 광고 네트워크, 외부 이미지 서버, 운영체제 기능의 장애나 정책 변경으로 인한 손해에 대하여 운영자의 고의 또는 중대한 과실이 없는 한 책임을 지지 않습니다.\n4. 운영자는 무료로 제공되는 서비스 부분에 관하여 관련 법령이 허용하는 범위 내에서 책임을 제한할 수 있습니다.",
+          "en": "1. The Operator shall not be liable for any failure to provide the Service due to force majeure events, including natural disasters, war, terrorism, hacking, network failures, device OS issues, or outages of app marketplaces or advertising/payment service providers.\n2. The Operator shall not be liable for service disruptions, device malfunctions, app deletions, local data loss, or network issues attributable to the User.\n3. The Operator shall not be liable for damages resulting from outages or policy changes of app marketplaces, advertising networks, external image servers, or operating system features provided by third parties, unless caused by the Operator's willful misconduct or gross negligence.\n4. With respect to portions of the Service provided free of charge, the Operator may limit its liability to the extent permitted by applicable law."
+        }
+      },
+      {
+        "title": {
+          "ko": "제14조 이용자에 대한 통지",
+          "en": "Article 14. Notices to Users"
+        },
+        "content": {
+          "ko": "1. 운영자는 서비스 내 공지사항, 팝업, 앱마켓 공지, 기타 합리적인 방법으로 이용자에게 통지할 수 있습니다.\n2. 전체 이용자에 대한 통지는 서비스 내 게시로 갈음할 수 있습니다. 다만 이용자에게 중대한 영향을 미치는 사항은 가능한 범위에서 별도 안내합니다.",
+          "en": "1. The Operator may provide notices to Users through in-app announcements, pop-ups, app marketplace notifications, or other reasonable means.\n2. Notices directed at all Users may be substituted by posting within the Service. However, matters that materially affect Users will be communicated separately to the extent practicable."
+        }
+      },
+      {
+        "title": {
+          "ko": "제15조 준거법 및 관할",
+          "en": "Article 15. Governing Law and Jurisdiction"
+        },
+        "content": {
+          "ko": "1. 본 약관의 해석 및 운영자와 이용자 간 분쟁에는 대한민국 법령을 적용합니다.\n2. 본 약관 또는 서비스 이용과 관련하여 분쟁이 발생하는 경우, 당사자는 성실히 협의하여 해결하도록 노력합니다.\n3. 협의로 해결되지 않는 분쟁에 대해서는 관련 법령에 따른 관할법원을 제1심 전속적 관할법원으로 합니다.",
+          "en": "1. The laws of the Republic of Korea shall apply to the interpretation of these Terms and to any disputes between the Operator and Users.\n2. In the event of a dispute arising in connection with these Terms or the use of the Service, the parties shall endeavor to resolve the matter through good-faith negotiation.\n3. For disputes that cannot be resolved through negotiation, the court having jurisdiction under applicable law shall serve as the court of exclusive jurisdiction for the first instance."
+        }
+      }
+    ]
+  },
+  "support": {
+    "email": "infodeskline@gmail.com",
+    "sections": []
+  },
+  "licenses": [
+    {
+      "name": "Design Template",
+      "author": "Median.co",
+      "licenseType": "CC BY 4.0"
+    },
+    {
+      "name": "animal-crossing JSON",
+      "author": "Norviah",
+      "description": "Original Source Data sourced from ACNH Spreadsheet and Translations Spreadsheet"
+    }
+  ]
+}

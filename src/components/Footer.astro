@@ -1,0 +1,62 @@
+---
+/**
+ * Footer
+ * - Fixed at bottom of page
+ * - Copyright text from i18n
+ */
+import type { Lang } from '../i18n/utils';
+import { t } from '../i18n/utils';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+---
+
+<footer class="footer" role="contentinfo">
+  <div class="container footer-inner">
+    <span class="footer-copyright">
+      {t(lang, 'footer.copyright')}
+    </span>
+    <a href={`mailto:infodeskline@gmail.com`} class="footer-email">
+      infodeskline@gmail.com
+    </a>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    border-top: 1px solid var(--color-border);
+    padding: var(--space-lg) 0;
+    background: rgba(245, 245, 247, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  .footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+  }
+
+  .footer-copyright {
+    font-size: 13px;
+    color: var(--color-text-tertiary);
+  }
+
+  .footer-email {
+    font-size: 13px;
+    color: var(--color-text-secondary);
+    transition: color var(--duration-fast) var(--ease-smooth);
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-email:hover {
+    color: var(--color-accent);
+  }
+</style>
