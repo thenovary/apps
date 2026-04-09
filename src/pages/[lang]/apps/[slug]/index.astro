@@ -363,6 +363,15 @@ const screenshots = Array.from({ length: screenshotCount }, (_, i) => `/${app.sl
     const isAtEnd = () => track.scrollLeft + track.clientWidth >= track.scrollWidth - 4;
     const isAtStart = () => track.scrollLeft <= 4;
 
+    const resetToFirstScreenshot = () => {
+      const prevBehavior = track.style.scrollBehavior;
+      track.style.scrollBehavior = 'auto';
+      track.scrollLeft = 0;
+      requestAnimationFrame(() => {
+        track.style.scrollBehavior = prevBehavior;
+      });
+    };
+
     btnPrev.addEventListener('click', () => {
       if (isAtStart()) {
         track.scrollTo({ left: track.scrollWidth, behavior: 'smooth' });
@@ -380,8 +389,15 @@ const screenshots = Array.from({ length: screenshotCount }, (_, i) => `/${app.sl
     });
 
     setItemWidths();
+    resetToFirstScreenshot();
 
-    new ResizeObserver(() => { setItemWidths(); }).observe(clip);
+    window.addEventListener('pageshow', () => {
+      resetToFirstScreenshot();
+    });
+
+    new ResizeObserver(() => {
+      setItemWidths();
+    }).observe(clip);
   }
 
   // Move mobile floating bar to <body> to escape transform stacking context
