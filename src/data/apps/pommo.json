@@ -312,5 +312,16 @@
       }
     ]
   },
-  "licenses": []
+  "licenses": [
+    {
+      "name": "Design Template",
+      "author": "Arzu Cetinkaya",
+      "licenseType": "CC BY 4.0"
+    },
+    {
+      "name": "Design Template",
+      "author": "Median.co",
+      "licenseType": "CC BY 4.0"
+    }
+  ]
 }

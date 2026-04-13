@@ -318,7 +318,22 @@
   "licenses": [
     {
       "name": "Design Template",
+      "author": "Arzu Cetinkaya",
+      "licenseType": "CC BY 4.0"
+    },
+    {
+      "name": "Design Template",
+      "author": "Chamjo",
+      "licenseType": "CC BY 4.0"
+    },
+    {
+      "name": "Design Template",
       "author": "Median.co",
+      "licenseType": "CC BY 4.0"
+    },
+    {
+      "name": "Emoji Graphics",
+      "author": "Twitter, Inc and other contributors",
       "licenseType": "CC BY 4.0"
     },
     {
