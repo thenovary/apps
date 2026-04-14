@@ -13,8 +13,8 @@
     "en": "A memo app as casual as messaging"
   },
   "description": {
-    "ko": "Pommo는 메신저 인터페이스에서 영감을 받은 메모 앱입니다. 채팅하듯 생각을 빠르게 적고, 깔끔하게 정리할 수 있습니다.",
-    "en": "Pommo is a memo app inspired by messenger interfaces. Jot down thoughts as quickly as chatting, and organize them effortlessly."
+    "ko": "Pommo는 메신저 인터페이스에서 영감을 받은 메모 앱입니다. 채팅하듯 생각을 빠르게 적고, 깔끔하게 정리할 수 있습니다.\n\n아이디어, 일기, 공부, 업무, 개인 기록용으로 채팅방을 따로 만들고 관리할 수 있습니다.\n텍스트 메모, 사진, 동영상, 파일, 링크를 한곳에 저장해 나중에 쉽게 다시 찾을 수 있습니다.\n\nPommo에서는 채팅방별 메모 정리, 미디어와 파일 첨부, 백업 내보내기와 가져오기, PIN 잠금, 테마·배경·폰트 꾸미기가 가능합니다.\n대부분의 콘텐츠는 기기에 저장되며, 선택형 프리미엄 기능으로 광고 제거와 더 깊은 커스터마이징을 이용할 수 있습니다.",
+    "en": "Pommo is a memo app inspired by messenger interfaces. You can quickly capture thoughts as if you were chatting and keep them neatly organized.\n\nCreate and manage separate chat rooms for ideas, journaling, studying, work, or personal records.\nStore text notes, photos, videos, files, and links in one place so you can easily find them again later.\n\nWith Pommo, you can organize notes by chat room, attach media and files, export and import backups, lock the app with a PIN, and customize themes, backgrounds, and fonts.\nMost content is stored on your device, and optional premium features let you remove ads and unlock deeper customization."
   },
   "screenshots": { "ko": 7, "en": 7 },
   "platforms": ["ios", "android"],
