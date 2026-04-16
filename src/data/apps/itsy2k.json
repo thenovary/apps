@@ -1,0 +1,47 @@
+{
+  "slug": "itsy2k",
+  "order": 1,
+  "icon": "/icons/itsy2k.png",
+  "name": {
+    "default": "itsy2k",
+    "ko": "itsy2k",
+    "en": "itsy2k",
+    "ja": "itsy2k"
+  },
+  "tagline": {
+    "ko": "2000년대 빈티지 디지털 카메라 필터 앱",
+    "en": "A vintage digital camera filter app inspired by the 2000s"
+  },
+  "description": {
+    "ko": "itsy2k는 2000년대 초반 디지털 카메라 특유의 감성을 사진에 담아내는 필터 앱입니다.\n\n낮은 해상도의 노이즈, 과포화된 색감, 날짜/시간 스탬프, 플래시 특유의 분위기를 현대적인 편집 경험으로 다시 풀어냅니다.\n사진을 불러와 필터를 적용하고, 강도를 조절한 뒤, 원본 비율을 유지한 채 저장할 수 있습니다.\n\n무료 필터를 중심으로 시작하고, 원하는 경우 필터 팩과 커스터마이징을 확장하는 방식으로 가볍게 사용할 수 있도록 설계하고 있습니다.",
+    "en": "itsy2k is a photo filter app that brings the signature feel of early-2000s digital cameras into your photos.\n\nIt recreates details like low-resolution noise, oversaturated color, date and time stamps, and flash-heavy snapshots through a modern editing experience.\nImport a photo, apply a filter, adjust the intensity, and save it while keeping the original aspect ratio.\n\nThe app is designed to be lightweight to start with, centered around free filters, while leaving room to expand with filter packs and deeper customization over time."
+  },
+  "screenshots": {
+    "ko": 0,
+    "en": 0
+  },
+  "platforms": ["ios", "android"],
+  "status": {
+    "ko": "출시 예정",
+    "en": "Coming Soon"
+  },
+  "links": {
+    "appStore": "",
+    "googlePlay": ""
+  },
+  "privacy": {
+    "lastUpdated": {
+      "ko": "2026년 4월 16일",
+      "en": "April 16, 2026"
+    },
+    "sections": []
+  },
+  "terms": {
+    "lastUpdated": {
+      "ko": "2026년 4월 16일",
+      "en": "April 16, 2026"
+    },
+    "sections": []
+  },
+  "licenses": []
+}
