@@ -18,6 +18,10 @@
   },
   "screenshots": { "ko": 9, "en": 9 },
   "platforms": ["ios", "android"],
+  "status": {
+    "ko": "신규",
+    "en": "New"
+  },
   "links": {
     "appStore": "https://apps.apple.com/app/deepread-reading-tracker/id6762040668",
     "googlePlay": "https://play.google.com/store/apps/details?id=com.thenovary.deepread"

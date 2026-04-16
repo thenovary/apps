@@ -19,11 +19,11 @@
   "screenshots": { "ko": 7, "en": 7 },
   "platforms": ["ios", "android"],
   "status": {
-    "ko": "출시 예정",
-    "en": "Coming Soon"
+    "ko": "신규",
+    "en": "New"
   },
   "links": {
-    "appStore": "",
+    "appStore": "https://apps.apple.com/app/pommo-chat-memo/id6762179210",
     "googlePlay": ""
   },
   "privacy": {
