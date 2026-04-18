@@ -1,0 +1,324 @@
+{
+  "slug": "grately",
+  "order": 5,
+  "icon": "/icons/Grately.png",
+  "name": {
+    "default": "Grately",
+    "ko": "Grately",
+    "en": "Grately",
+    "ja": "Grately"
+  },
+  "tagline": {
+    "ko": "하루 3가지 감사로 마음을 정리하는 저널 앱",
+    "en": "A daily gratitude journal for three small reflections"
+  },
+  "description": {
+    "ko": "Grately는 하루를 길게 정리하기 부담스러운 날에도, 짧고 따뜻하게 감사한 순간을 기록할 수 있도록 만든 데일리 저널 앱입니다.\n\n오늘 감사한 세 가지, 오늘 나를 미소 짓게 한 일, 오늘 내가 잘한 한 가지를 차분히 적고, 기분과 작은 이모지를 함께 남길 수 있습니다. 추가 메모도 자유롭게 적을 수 있어 짧은 회고부터 감정 정리까지 자연스럽게 이어집니다.\n\n홈 화면에서 오늘의 기록을 바로 시작하고, 캘린더와 타임라인으로 지나온 기록을 다시 돌아볼 수 있습니다. 프리미엄 기능을 이용하면 기분·이모지 통계, 추가 테마, 커스텀 앱 아이콘, 앱 잠금 기능을 사용할 수 있으며, 매일 리마인더로 기록 습관을 이어갈 수 있습니다.\n\n별도 회원가입 없이 바로 사용할 수 있고, 사용자가 작성한 대부분의 기록 데이터는 기기에 로컬로 저장됩니다.",
+    "en": "Grately is a daily journal app designed to help you capture gratitude in a simple, comforting way, even on days when a long journal entry feels like too much.\n\nYou can write three things you are grateful for, note what made you smile today, reflect on one thing you did well, and pair the day with a mood and a small emoji. There is also space for free writing, so the app can hold both quick reflections and deeper thoughts.\n\nStart today's entry right from the home screen, then revisit past reflections through the calendar and timeline views. Premium features can unlock mood and emoji stats, extra themes, custom app icons, and app lock, while daily reminders help you keep the habit going.\n\nYou can begin using Grately without creating an account, and most journal data you write in the app is stored locally on your device."
+  },
+  "screenshots": {
+    "ko": 0,
+    "en": 0
+  },
+  "platforms": [
+    "ios",
+    "android"
+  ],
+  "status": {
+    "ko": "출시 예정",
+    "en": "Coming Soon"
+  },
+  "links": {
+    "appStore": "",
+    "googlePlay": ""
+  },
+  "privacy": {
+    "lastUpdated": {
+      "ko": "2026년 4월 19일",
+      "en": "April 19, 2026"
+    },
+    "sections": [
+      {
+        "title": {
+          "ko": "개요",
+          "en": "Overview"
+        },
+        "content": {
+          "ko": "Grately는 감사 일기와 간단한 감정 회고를 기록할 수 있는 개인 저널 앱입니다. 사용자는 날짜별로 감사한 일 3가지, 자유 메모, 오늘의 기분, 선택 이모지를 남기고, 캘린더·타임라인·통계·리마인더·테마·앱 아이콘·앱 잠금 기능 등을 이용할 수 있습니다.\nGrately는 회원가입을 요구하지 않으며, 개발자 운영형 계정 시스템이나 클라우드 동기화 서버를 제공하지 않습니다. 사용자가 작성한 대부분의 기록은 이용자의 기기에 로컬로 저장됩니다.",
+          "en": "Grately is a personal journaling app for gratitude entries and lightweight emotional reflection. Users can record three gratitude prompts, free-form notes, a daily mood, and an optional emoji for each date, then review their history through calendar, timeline, stats, reminder, theme, app icon, and app lock features.\nGrately does not require account registration and does not provide a developer-operated account system or cloud sync server. Most journal content created by users is stored locally on the user's device."
+        }
+      },
+      {
+        "title": {
+          "ko": "처리되는 정보",
+          "en": "Information Processed"
+        },
+        "content": {
+          "ko": "사용자가 선택한 기능에 따라 Grately는 기기 내에서 다음과 같은 정보를 처리할 수 있습니다.\n날짜별 감사 기록 3개 항목, 자유 메모, 기분 값, 선택 이모지, 작성 시각 등 저널 데이터\n언어, 테마, 선택한 앱 아이콘, 리마인더 사용 여부와 시간, 무료 체험 또는 프리미엄 접근 상태 등 앱 설정 정보\n앱 잠금 기능 사용 시 잠금 활성화 여부와 로컬에 저장되는 비밀번호 해시 값 및 관련 설정 정보\n이 정보는 주로 기기 내부에서 처리되며, 개발자가 별도의 원격 데이터베이스로 직접 수집하지 않습니다.",
+          "en": "Depending on the features you choose to use, Grately may process the following information on your device:\nJournal data such as the three gratitude fields for each date, free-form notes, mood value, selected emoji, and entry timestamp\nApp settings such as language, theme, selected app icon, reminder status and time, and free-trial or premium access state\nIf you enable app lock, the app may store lock status, a locally stored passcode hash, and related settings on your device\nThis information is processed primarily on-device, and the developer does not directly collect it into a separate remote database."
+        }
+      },
+      {
+        "title": {
+          "ko": "알림, 앱 잠금 및 기기 기능",
+          "en": "Reminders, App Lock, and Device Features"
+        },
+        "content": {
+          "ko": "Grately는 매일 리마인더 기능을 제공하기 위해 알림 권한을 요청할 수 있습니다. 이용자가 리마인더를 활성화하면 설정한 시간에 맞춰 로컬 알림이 예약될 수 있습니다.\n이용자가 앱 잠금 기능을 사용하는 경우, 서비스는 Face ID, Touch ID, 생체인증 또는 기기 인증과 같은 운영체제 제공 인증 기능을 호출할 수 있습니다. 개발자는 이용자의 생체정보 원본을 직접 수집하거나 저장하지 않으며, 인증 처리는 각 운영체제의 보안 기능에 따라 수행됩니다.",
+          "en": "Grately may request notification permission in order to provide daily reminder functionality. If you enable reminders, local notifications may be scheduled at the time you choose.\nIf you use app lock, the service may invoke operating system authentication features such as Face ID, Touch ID, biometrics, or device credentials where supported. The developer does not directly collect or store your raw biometric information, and authentication is handled through the security features provided by your operating system."
+        }
+      },
+      {
+        "title": {
+          "ko": "광고 및 결제",
+          "en": "Advertising and Payments"
+        },
+        "content": {
+          "ko": "무료 버전의 Grately는 홈 화면 또는 기록 저장 흐름 등 일부 구간에서 광고를 표시할 수 있습니다. 광고 제공을 위해 Google AdMob과 같은 제3자 광고 서비스가 사용될 수 있으며, 이들 제공업체는 자체 정책에 따라 기기 정보, 광고 식별자, IP 주소, 앱 상호작용 정보 등을 처리할 수 있습니다.\n서비스는 광고 제거, 통계, 추가 테마, 커스텀 앱 아이콘, 앱 잠금과 같은 프리미엄 기능 또는 무료 체험 제공을 포함할 수 있습니다. 인앱 결제의 청구, 결제, 복원은 Apple App Store 또는 Google Play Billing 등 플랫폼 사업자를 통해 처리됩니다.",
+          "en": "The free version of Grately may display advertisements in certain areas, such as on the home screen or within the save flow after an entry is written. Third-party advertising services such as Google AdMob may be used for this purpose, and those providers may process device information, advertising identifiers, IP addresses, and app interaction data under their own policies.\nThe service may offer premium features or free-trial access for items such as ad removal, stats, extra themes, custom app icons, and app lock. Billing, payment processing, and purchase restoration for in-app purchases are handled through platform providers such as the Apple App Store or Google Play Billing."
+        }
+      },
+      {
+        "title": {
+          "ko": "제3자 서비스",
+          "en": "Third-Party Services"
+        },
+        "content": {
+          "ko": "Grately는 다음과 같은 제3자 서비스 또는 플랫폼 기능을 사용할 수 있습니다.\nGoogle AdMob (광고)\nApple App Store / Google Play Billing (결제 및 구매 복원)\n운영체제가 제공하는 로컬 알림 기능\n운영체제가 제공하는 기기 인증 또는 생체인증 기능\n앱 리뷰 요청과 관련된 플랫폼 기능\n이들 제공자는 각자의 개인정보 처리방침에 따라 독립적으로 정보를 처리할 수 있으며, 개발자는 해당 처리 과정을 직접 통제하지 않습니다.",
+          "en": "Grately may use the following third-party services or platform features:\nGoogle AdMob (advertising)\nApple App Store / Google Play Billing (payments and purchase restoration)\nLocal notification services provided by the operating system\nDevice authentication or biometric features provided by the operating system\nPlatform review-prompt features\nThese providers may process information independently under their own privacy policies, and the developer does not directly control those processing activities."
+        }
+      },
+      {
+        "title": {
+          "ko": "데이터 저장",
+          "en": "Data Storage"
+        },
+        "content": {
+          "ko": "저널 기록, 기분 정보, 이모지 선택, 설정 데이터 등 대부분의 앱 데이터는 이용자의 기기에 로컬로 저장됩니다. thenovary는 현재 Grately 기록을 위한 개발자 운영형 클라우드 백업 또는 동기화 서버를 제공하지 않습니다.\n따라서 앱을 삭제하거나 기기를 변경하는 경우, 로컬에 저장된 일부 또는 전부의 데이터가 복구되지 않을 수 있습니다.",
+          "en": "Most app data, including journal entries, mood information, emoji selections, and settings, is stored locally on the user's device. thenovary does not currently provide a developer-operated cloud backup or sync server for Grately entries.\nAs a result, if you delete the app or change devices, some or all locally stored data may not be recoverable."
+        }
+      },
+      {
+        "title": {
+          "ko": "데이터 공유",
+          "en": "Data Sharing"
+        },
+        "content": {
+          "ko": "thenovary는 이용자의 개인정보를 판매하지 않습니다. 다만 광고, 결제, 로컬 알림, 기기 인증, 플랫폼 기능 제공에 필요한 범위에서 제3자 제공업체가 관련 정보를 처리할 수 있습니다.\n개발자는 사용자가 작성한 감사 기록 내용을 별도의 개발자 서버로 전송하여 판매하거나 외부에 공개하지 않습니다.",
+          "en": "thenovary does not sell users' personal information. However, relevant information may be processed by third-party providers to the extent necessary for advertising, billing, local notifications, device authentication, and platform feature support.\nThe developer does not transmit the substance of your gratitude entries to a separate developer-managed server for sale or public disclosure."
+        }
+      },
+      {
+        "title": {
+          "ko": "보관 기간 및 이용자 통제",
+          "en": "Retention and User Controls"
+        },
+        "content": {
+          "ko": "대부분의 데이터가 로컬 저장되므로, 이용자는 앱 내에서 기록을 수정하거나 삭제하고, 리마인더를 끄고, 앱 잠금 설정을 변경하며, 앱 삭제를 통해 보관 여부를 직접 관리할 수 있습니다.\n구매 내역이나 환불 관련 정보는 각 앱마켓 사업자의 정책에 따라 별도로 관리될 수 있습니다.",
+          "en": "Because most data is stored locally, users remain in direct control of retention by editing or deleting entries in the app, turning reminders off, changing app lock settings, or uninstalling the app.\nPurchase history or refund-related information may be managed separately under the policies of the relevant app marketplace provider."
+        }
+      },
+      {
+        "title": {
+          "ko": "아동의 개인정보",
+          "en": "Children's Privacy"
+        },
+        "content": {
+          "ko": "Grately는 만 13세 미만 아동을 특별히 대상으로 하지 않으며, thenovary는 개발자 운영 계정 시스템을 통해 아동의 개인정보를 고의로 수집하지 않습니다.",
+          "en": "Grately is not specifically directed to children under the age of 13, and thenovary does not knowingly collect personal information from children through any developer-operated account system."
+        }
+      },
+      {
+        "title": {
+          "ko": "보안",
+          "en": "Security"
+        },
+        "content": {
+          "ko": "Grately는 기기 로컬 저장소와 운영체제가 제공하는 보안 기능에 의존합니다. 서비스의 안전한 이용을 지원하기 위해 합리적인 노력을 기울이지만, 어떠한 저장 또는 전송 방식도 완전한 보안을 보장할 수는 없습니다.",
+          "en": "Grately relies on local device storage and the security features provided by the operating system. While reasonable efforts are made to support the secure use of the service, no method of storage or transmission can be guaranteed to be completely secure."
+        }
+      },
+      {
+        "title": {
+          "ko": "변경",
+          "en": "Changes to This Policy"
+        },
+        "content": {
+          "ko": "본 개인정보 처리방침은 기능 변경, 법적 요구사항, 제3자 서비스 변경에 따라 수정될 수 있습니다. 개정 시에는 본 페이지에 수정된 시행일과 함께 게시됩니다.",
+          "en": "This Privacy Policy may be updated in response to feature changes, legal requirements, or changes to third-party services. Any revisions will be posted on this page together with an updated effective date."
+        }
+      },
+      {
+        "title": {
+          "ko": "문의",
+          "en": "Contact"
+        },
+        "content": {
+          "ko": "infodeskline@gmail.com",
+          "en": "infodeskline@gmail.com"
+        }
+      }
+    ]
+  },
+  "terms": {
+    "lastUpdated": {
+      "ko": "2026년 4월 19일",
+      "en": "April 19, 2026"
+    },
+    "sections": [
+      {
+        "title": {
+          "ko": "약관 동의",
+          "en": "Acceptance of Terms"
+        },
+        "content": {
+          "ko": "이용자가 Grately를 다운로드, 설치, 접속 또는 이용하는 경우 본 약관에 동의한 것으로 봅니다. 본 약관에 동의하지 않는 경우 서비스를 이용할 수 없습니다.",
+          "en": "By downloading, installing, accessing, or using Grately, you are deemed to have agreed to these Terms. If you do not agree to these Terms, you may not use the service."
+        }
+      },
+      {
+        "title": {
+          "ko": "서비스 개요",
+          "en": "Service Overview"
+        },
+        "content": {
+          "ko": "Grately는 일별 감사 기록과 감정 회고를 돕는 저널 앱입니다. 서비스에는 감사한 일 3가지 작성, 자유 메모, 기분 및 이모지 선택, 캘린더 확인, 타임라인 조회, 통계 확인, 리마인더 설정, 테마 변경, 앱 아이콘 선택, 앱 잠금, 광고 기반 무료 이용 및 선택적 프리미엄 기능이 포함될 수 있습니다.\n현재 서비스는 별도 회원가입을 요구하지 않으며, 사용자가 작성한 대부분의 콘텐츠는 이용자의 기기에 로컬로 저장됩니다.",
+          "en": "Grately is a journaling app designed to support daily gratitude writing and emotional reflection. The service may include features such as writing three gratitude items, free-form notes, mood and emoji selection, calendar review, timeline browsing, stats, reminders, theme changes, app icon selection, app lock, ad-supported free use, and optional premium features.\nThe service currently does not require separate account registration, and most user-created content is stored locally on the user's device."
+        }
+      },
+      {
+        "title": {
+          "ko": "이용권 부여",
+          "en": "License to Use the Service"
+        },
+        "content": {
+          "ko": "운영자는 이용자에게 개인적이고 비상업적인 목적 범위에서, 이용자가 적법하게 보유하거나 관리하는 기기에서 Grately를 사용할 수 있는 제한적, 비독점적, 양도 불가능하며 철회 가능한 이용권을 부여합니다.",
+          "en": "The operator grants you a limited, non-exclusive, non-transferable, and revocable license to use Grately on devices that you lawfully own or control, solely for personal and non-commercial purposes."
+        }
+      },
+      {
+        "title": {
+          "ko": "이용자 콘텐츠와 로컬 저장",
+          "en": "User Content and Local Storage"
+        },
+        "content": {
+          "ko": "이용자는 Grately를 통해 작성하거나 저장하는 감사 기록, 자유 메모, 기분 정보, 이모지 선택, 설정값 등 자신의 콘텐츠와 이용 결과에 대해 책임을 집니다.\n서비스 데이터의 대부분이 로컬 저장되는 구조이므로, 이용자는 기기 보안, 기기 변경, 앱 삭제, 데이터 손실 가능성에 대해 스스로 주의하여야 합니다. 운영자는 현재 이용자 기록을 위한 개발자 운영형 클라우드 동기화 또는 복구 서비스를 제공하지 않습니다.",
+          "en": "You are responsible for the gratitude entries, free-form notes, mood information, emoji selections, settings, and other content or outcomes you create or store through Grately.\nBecause most service data is stored locally, you are responsible for device security, device changes, app deletion, and the risk of local data loss. The operator does not currently provide a developer-managed cloud sync or recovery service for user journal content."
+        }
+      },
+      {
+        "title": {
+          "ko": "프리미엄 기능, 무료 체험, 광고 및 결제",
+          "en": "Premium Features, Free Trials, Advertising, and Billing"
+        },
+        "content": {
+          "ko": "Grately는 광고 제거, 기분 및 이모지 통계, 추가 테마, 커스텀 앱 아이콘, 앱 잠금 등 선택적 프리미엄 기능을 제공할 수 있습니다. 무료 체험, 구독, 일회성 결제, 상품 구성, 가격은 이용 시점의 앱 내 안내 또는 앱마켓 표시를 기준으로 적용될 수 있습니다.\n무료 버전에서는 배너형, 네이티브형, 전면형 등 다양한 형태의 광고가 노출될 수 있습니다. 결제, 청구, 구매 복원, 취소, 환불은 관련 법령 및 Apple App Store, Google Play 등 앱마켓 사업자의 정책에 따라 처리됩니다.",
+          "en": "Grately may offer optional premium features such as ad removal, mood and emoji stats, extra themes, custom app icons, and app lock. Free trials, subscriptions, one-time purchases, product configuration, and pricing may be governed by the in-app purchase information or app marketplace listing available at the time of use.\nThe free version may display various types of advertisements, including banner, native, and interstitial formats. Billing, purchase restoration, cancellation, and refunds are handled in accordance with applicable law and the policies of app marketplace operators such as the Apple App Store and Google Play."
+        }
+      },
+      {
+        "title": {
+          "ko": "권한 및 기기 기능",
+          "en": "Permissions and Device Features"
+        },
+        "content": {
+          "ko": "서비스는 리마인더 제공을 위한 알림 권한, 앱 잠금 기능을 위한 기기 인증 또는 생체인증 기능 등 운영체제가 제공하는 권한과 기능을 사용할 수 있습니다.\n이용자는 권한 요청을 거부할 수 있으나, 이 경우 일부 기능이 제한되거나 정상적으로 작동하지 않을 수 있습니다.",
+          "en": "The service may use permissions and device features provided by the operating system, including notification permission for reminders and device-authentication or biometric features for app lock.\nYou may decline such permission requests, but doing so may limit or prevent certain features from functioning properly."
+        }
+      },
+      {
+        "title": {
+          "ko": "금지행위",
+          "en": "Prohibited Conduct"
+        },
+        "content": {
+          "ko": "이용자는 서비스의 정상적인 운영을 방해하거나, 무단 접근을 시도하거나, 광고 또는 프리미엄 흐름을 비정상적으로 우회하거나, 관련 법령이 허용하는 범위를 넘는 역분석을 하거나, 타인의 권리를 침해하거나, 기타 법령 또는 공서양속에 반하는 행위를 하여서는 안 됩니다.",
+          "en": "You may not interfere with the normal operation of the service, attempt unauthorized access, abnormally bypass advertising or premium flows, reverse engineer the app beyond what is permitted by applicable law, infringe the rights of others, or engage in any conduct that violates applicable law or public order and morals."
+        }
+      },
+      {
+        "title": {
+          "ko": "서비스 제공, 변경 및 중단",
+          "en": "Service Availability, Changes, and Suspension"
+        },
+        "content": {
+          "ko": "운영자는 서비스의 전부 또는 일부를 업데이트, 수정, 제한 또는 중단할 수 있습니다. 유지보수, 기기 환경, 네트워크 상태, 앱마켓 정책, 제3자 서비스 장애 등에 따라 일부 기능이 일시적으로 또는 지속적으로 제한될 수 있습니다.\n이용자는 언제든지 앱 삭제를 통해 서비스 이용을 종료할 수 있습니다.",
+          "en": "The operator may update, modify, restrict, or discontinue all or part of the service. Certain features may be temporarily or permanently limited due to maintenance, device conditions, network status, app marketplace policies, or third-party service outages.\nYou may stop using the service at any time by uninstalling the app."
+        }
+      },
+      {
+        "title": {
+          "ko": "제3자 서비스",
+          "en": "Third-Party Services"
+        },
+        "content": {
+          "ko": "서비스는 Google AdMob, Apple App Store, Google Play Billing, 운영체제 알림 기능, 운영체제 기기 인증 기능, 앱 리뷰 요청 기능 등 제3자 서비스 또는 플랫폼 기능에 의존할 수 있습니다. 해당 서비스의 정책 변경, 장애, 중단 또는 과금 정책은 운영자의 통제 범위를 벗어날 수 있습니다.",
+          "en": "The service may rely on third-party services or platform features such as Google AdMob, Apple App Store, Google Play Billing, operating-system notification services, operating-system authentication services, and review-prompt functionality. Changes in policy, outages, discontinuation, or billing practices for those services may be outside the operator's control."
+        }
+      },
+      {
+        "title": {
+          "ko": "면책 및 책임 제한",
+          "en": "Disclaimer and Limitation of Liability"
+        },
+        "content": {
+          "ko": "서비스는 관련 법령이 허용하는 범위에서 현 상태 그대로 제공됩니다. 운영자는 이용자의 기기, 운영체제, 네트워크 환경, 제3자 서비스, 앱 삭제, 기기 변경, 권한 거부 또는 이용자 과실로 인해 발생하는 데이터 손실, 기능 제한, 사용상 손해에 대하여 법령상 허용되는 범위에서 책임을 제한할 수 있습니다.",
+          "en": "The service is provided on an as-is basis to the extent permitted by applicable law. To the extent allowed by law, the operator may limit liability for data loss, feature restrictions, or usage-related damages arising from the user's device, operating system, network conditions, third-party services, app deletion, device changes, denied permissions, or user fault."
+        }
+      },
+      {
+        "title": {
+          "ko": "문의",
+          "en": "Contact"
+        },
+        "content": {
+          "ko": "서비스 관련 문의는 아래 이메일로 접수할 수 있습니다.\ninfodeskline@gmail.com",
+          "en": "Questions regarding the service may be sent to:\ninfodeskline@gmail.com"
+        }
+      }
+    ]
+  },
+  "support": {
+    "email": "infodeskline@gmail.com",
+    "sections": [
+      {
+        "title": {
+          "ko": "문의 및 피드백",
+          "en": "Questions and Feedback"
+        },
+        "content": {
+          "ko": "Grately 사용 중 불편한 점, 버그, 번역 수정 제안이 있다면 이메일로 알려주세요. 문의 시 기기 모델, OS 버전, 앱 버전, 문제 상황을 함께 보내주시면 확인이 더 빨라집니다.",
+          "en": "If you run into a bug, notice a translation issue, or want to share feedback while using Grately, feel free to email us. Including your device model, OS version, app version, and a short description of the issue helps us investigate faster."
+        }
+      },
+      {
+        "title": {
+          "ko": "기록 데이터와 기기 변경",
+          "en": "Journal Data and Device Changes"
+        },
+        "content": {
+          "ko": "Grately의 기록은 현재 계정 기반 동기화 없이 기기에 로컬 저장됩니다. 앱 삭제, 기기 변경, 초기화가 발생하면 일부 또는 전체 기록이 복구되지 않을 수 있으니 중요한 기록은 이 점을 고려해 관리해 주세요.",
+          "en": "Grately currently stores journal records locally on your device without account-based sync. If you uninstall the app, change devices, or reset your device, some or all entries may not be recoverable, so please keep this in mind when managing important reflections."
+        }
+      },
+      {
+        "title": {
+          "ko": "리마인더 및 프리미엄 관련 안내",
+          "en": "Reminders and Premium Help"
+        },
+        "content": {
+          "ko": "리마인더가 오지 않는 경우 알림 권한과 기기 절전 설정을 먼저 확인해 주세요. 프리미엄 또는 무료 체험 상태가 예상과 다를 경우, 사용 중인 앱마켓 계정과 구매 복원 가능 여부를 함께 알려주시면 확인에 도움이 됩니다.",
+          "en": "If reminders are not arriving, please first check your notification permission and any battery-saving settings on your device. If your premium or free-trial status does not look right, letting us know which app marketplace account you are using and whether you tried restoring purchases will help us troubleshoot."
+        }
+      }
+    ]
+  },
+  "licenses": [
+    {
+      "name": "Emoji Graphics",
+      "author": "Twitter, Inc and other contributors",
+      "licenseType": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ]
+}
